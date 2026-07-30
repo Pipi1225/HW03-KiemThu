@@ -315,10 +315,50 @@
 
 ## Task 3: Cross-Browser / Cross-Platform
 
-### Compatibility Matrix
+Test how the 4 screens render and behave across the compatibility matrix (3 OS, 5 Browsers, 3 Device Classes).
 
-| Thiết bị (Device) | Hệ điều hành (OS) | Trình duyệt (Browser) | Kết quả (Pass/Fail) & Ghi chú lỗi | Screenshot File |
-|---|---|---|---|---|
-| Desktop (MacBook) | macOS 14 | Safari | Pass |  |
-| Tablet (iPad) | iOS 17 | Chrome | Fail (Bảng bị tràn viền) |  |
-| Phone (Galaxy S23) | Android 14 | Edge | Pass |  |
+### 1. C1 - Users List — Search, Role/Active Filters, Columns
+
+| Run ID | Thiết bị (Device) | Hệ điều hành (OS) | Trình duyệt (Browser) | Kết quả (Pass/Fail) & Ghi chú lỗi | Screenshot Link |
+|---|---|---|---|---|---|
+| C1-Run-01 | Desktop | Windows 11 | Chrome | Pass | ![User Management 1](images/cross-testing/C1-Desktop-Windows-Chrome.jpg) |
+| C1-Run-02 | Desktop | macOS 14 | Safari | | |
+| C1-Run-03 | Tablet | iPadOS 17 | Firefox | | |
+| C1-Run-04 | Phone | Android 14 | Edge | | |
+| C1-Run-05 | Phone | iOS 17 | Opera | | |
+
+<br>
+
+### 2. C2 - Create / Edit User & Assign Role
+
+| Run ID | Thiết bị (Device) | Hệ điều hành (OS) | Trình duyệt (Browser) | Kết quả (Pass/Fail) & Ghi chú lỗi | Screenshot Link |
+|---|---|---|---|---|---|
+| C2-Run-01 | Desktop | Windows 11 | Chrome | Pass | ![Create User 1](images/cross-testing/C2-Desktop-Windows-Chrome.jpg) |
+| C2-Run-02 | Desktop | macOS 14 | Safari | | |
+| C2-Run-03 | Tablet | iPadOS 17 | Firefox | | |
+| C2-Run-04 | Phone | Android 14 | Edge | | |
+| C2-Run-05 | Phone | iOS 17 | Opera | | |
+
+<br>
+
+### 3. C3 - Export to Excel — Column Completeness and Download Feedback
+
+| Run ID | Thiết bị (Device) | Hệ điều hành (OS) | Trình duyệt (Browser) | Kết quả (Pass/Fail) & Ghi chú lỗi | Screenshot Link |
+|---|---|---|---|---|---|
+| C3-Run-01 | Desktop | Windows 11 | Chrome | Fail (Thao tác xuất thành công nhưng tệp mở ra bị cảnh báo lỗi cấu trúc BUG-C3-01)| ![Export Excel 1](images/cross-testing/C3-Desktop-Windows-Chrome-1.jpg) <br> ![Excel Data 1](images/cross-testing/C3-Desktop-Windows-Chrome-2.jpg) |
+| C3-Run-02 | Desktop | macOS 14 | Safari | | |
+| C3-Run-03 | Tablet | iPadOS 17 | Firefox | | |
+| C3-Run-04 | Phone | Android 14 | Edge | | |
+| C3-Run-05 | Phone | iOS 17 | Opera | | |
+
+<br>
+
+### 4. C4 - Delete User Confirmation Dialog & Audit Logs
+
+| Run ID | Thiết bị (Device) | Hệ điều hành (OS) | Trình duyệt (Browser) | Kết quả (Pass/Fail) & Ghi chú lỗi | Screenshot Link |
+|---|---|---|---|---|---|
+| C4-Run-01 | Desktop | Windows 11 | Chrome | Pass | ![Delete User Dialog 1](images/cross-testing/C4-Desktop-Windows-Chrome.jpg) |
+| C4-Run-02 | Desktop | macOS 14 | Safari | | |
+| C4-Run-03 | Tablet | iPadOS 17 | Firefox | | |
+| C4-Run-04 | Phone | Android 14 | Edge | | |
+| C4-Run-05 | Phone | iOS 17 | Opera | | |
