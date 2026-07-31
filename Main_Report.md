@@ -382,11 +382,12 @@ Test how the 4 screens render and behave across the compatibility matrix (3 OS, 
 | Run ID | Thiết bị (Device) | Hệ điều hành (OS) | Trình duyệt (Browser) | Kết quả (Pass/Fail) & Ghi chú lỗi | Screenshot Link |
 |---|---|---|---|---|---|
 | C1-Run-01 | Desktop | Windows 11 | Chrome | Pass | ![User Management 1](images/cross-testing/C1-Desktop-Windows-Chrome.jpg) |
-| C1-Run-02 | Desktop | Windows 11 | Opera | | |
-| C1-Run-03 | Desktop | Windows 11 | Edge | | |
-| C1-Run-04 | Desktop | macOS 14 | Safari | Pass | ![User Management 4](images/cross-testing/C1-Desktop-macOS-Safari.jpg) |
-| C1-Run-05 | Tablet | Android 15 | Chrome | Pass | ![User Management 5](images/cross-testing/C1-Tablet-Android-Chrome.jpg) |
-| C1-Run-06 | Phone | Android 16 | Chrome | Fail (Bảng thông tin của các User mất hết toàn bộ các cột, chỉ còn đúng cột Actions (Hành động) để chỉnh sửa/xóa User) | ![User Management 6](images/cross-testing/C1-Phone-Android-Chrome.jpg) |
+| C2-Run-02 | Desktop | Windows 11 | Opera | Pass | ![User Management 2](images/cross-testing/C1-Desktop-Windows-Opera.jpg) |
+| C2-Run-03 | Desktop | Windows 11 | Edge | Pass | ![User Management 3](images/cross-testing/C1-Desktop-Windows-Edge.jpg) |
+| C2-Run-04 | Desktop | Windows 11 | Firefox | Pass | ![User Management 4](images/cross-testing/C1-Desktop-Windows-Firefox.jpg) |
+| C1-Run-05 | Desktop | macOS 14 | Safari | Pass | ![User Management 5](images/cross-testing/C1-Desktop-macOS-Safari.jpg) |
+| C1-Run-06 | Tablet | Android 15 | Chrome | Pass | ![User Management 6](images/cross-testing/C1-Tablet-Android-Chrome.jpg) |
+| C1-Run-07 | Phone | Android 16 | Chrome | Fail (Bảng thông tin của các User mất hết toàn bộ các cột, chỉ còn đúng cột Actions (Hành động) để chỉnh sửa/xóa User) | ![User Management 7](images/cross-testing/C1-Phone-Android-Chrome.jpg) |
 
 <br>
 
@@ -395,11 +396,12 @@ Test how the 4 screens render and behave across the compatibility matrix (3 OS, 
 | Run ID | Thiết bị (Device) | Hệ điều hành (OS) | Trình duyệt (Browser) | Kết quả (Pass/Fail) & Ghi chú lỗi | Screenshot Link |
 |---|---|---|---|---|---|
 | C2-Run-01 | Desktop | Windows 11 | Chrome | Pass | ![Create User 1](images/cross-testing/C2-Desktop-Windows-Chrome.jpg) |
-| C2-Run-02 | Desktop | Windows 11 | Opera | | |
-| C2-Run-03 | Desktop | Windows 11 | Edge | | |
-| C2-Run-04 | Desktop | macOS 14 | Safari | Pass | ![Create User 4](images/cross-testing/C2-Desktop-macOS-Safari.jpg) |
-| C2-Run-05 | Tablet | Android 15 | Chrome | Pass | ![Create User 5](images/cross-testing/C2-Tablet-Android-Chrome.jpg) |
-| C2-Run-06 | Phone | Android 16 | Chrome | Fail (Dialog tạo User mới rất nhỏ, khó có thể thao tác/chọn trên điện thoại được) | ![Create User 6](images/cross-testing/C2-Phone-Android-Chrome.jpg) |
+| C2-Run-02 | Desktop | Windows 11 | Opera | Pass | ![Create User 2](images/cross-testing/C2-Desktop-Windows-Opera.jpg) |
+| C2-Run-03 | Desktop | Windows 11 | Edge | Pass | ![Create User 3](images/cross-testing/C2-Desktop-Windows-Edge.jpg) |
+| C2-Run-04 | Desktop | Windows 11 | Firefox | Pass | ![Create User 4](images/cross-testing/C2-Desktop-Windows-Firefox.jpg) |
+| C2-Run-05 | Desktop | macOS 14 | Safari | Pass | ![Create User 5](images/cross-testing/C2-Desktop-macOS-Safari.jpg) |
+| C2-Run-06 | Tablet | Android 15 | Chrome | Pass | ![Create User 6](images/cross-testing/C2-Tablet-Android-Chrome.jpg) |
+| C2-Run-07 | Phone | Android 16 | Chrome | Fail (Dialog tạo User mới rất nhỏ, khó có thể thao tác/chọn trên điện thoại được và cũng không thể xác định được User đã tạo mới hay chưa do không thấy nội dung bảng) | ![Create User 7](images/cross-testing/C2-Phone-Android-Chrome.jpg) |
 
 <br>
 
@@ -408,11 +410,12 @@ Test how the 4 screens render and behave across the compatibility matrix (3 OS, 
 | Run ID | Thiết bị (Device) | Hệ điều hành (OS) | Trình duyệt (Browser) | Kết quả (Pass/Fail) & Ghi chú lỗi | Screenshot Link |
 |---|---|---|---|---|---|
 | C3-Run-01 | Desktop | Windows 11 | Chrome | Fail (Thao tác xuất thành công nhưng tệp mở ra bị cảnh báo lỗi cấu trúc BUG-C3-01) | ![Export Excel 1](images/cross-testing/C3-Desktop-Windows-Chrome-1.jpg) <br> ![Excel Data 1](images/cross-testing/C3-Desktop-Windows-Chrome-2.jpg) |
-| C3-Run-02 | Desktop | Windows 11 | Opera | | |
-| C3-Run-03 | Desktop | Windows 11 | Edge | | |
-| C3-Run-04 | Desktop | macOS 14 | Safari | Pass | ![Export Excel 4](images/cross-testing/C3-Desktop-macOS-Safari-1.jpg) <br> ![Excel Data 4-a](images/cross-testing/C3-Desktop-macOS-Safari-2.jpg) <br> ![Excel Data 4-b](images/cross-testing/C3-Desktop-macOS-Safari-3.jpg) |
-| C3-Run-05 | Tablet | Android 15 | Chrome | Pass | ![Export Excel 5](images/cross-testing/C3-Tablet-Android-Chrome-1.jpg) <br> ![Excel Data 5](images/cross-testing/C3-Tablet-Android-Chrome-2.jpg) |
-| C3-Run-06 | Phone | Android 16 | Chrome | Pass | ![Export Excel 6](images/cross-testing/C3-Phone-Android-Chrome-1.jpg) <br> ![Excel Data 6](images/cross-testing/C3-Phone-Android-Chrome-2.jpg) |
+| C2-Run-02 | Desktop | Windows 11 | Opera | Fail (Thao tác xuất thành công nhưng tệp mở ra bị cảnh báo lỗi cấu trúc như C3-Run-01) | ![Export Excel 2](images/cross-testing/C3-Desktop-Windows-Opera-1.jpg) <br> ![Excel Data 2](images/cross-testing/C3-Desktop-Windows-Opera-2.jpg) |
+| C2-Run-03 | Desktop | Windows 11 | Edge | Fail (Thao tác xuất thành công nhưng tệp mở ra bị cảnh báo lỗi cấu trúc như C3-Run-01) | ![Export Excel 3](images/cross-testing/C3-Desktop-Windows-Edge-1.jpg) <br> ![Excel Data 3](images/cross-testing/C3-Desktop-Windows-Edge-2.jpg) |
+| C2-Run-04 | Desktop | Windows 11 | Firefox | Fail (Thao tác xuất thành công nhưng tệp mở ra bị cảnh báo lỗi cấu trúc như C3-Run-01) | ![Export Excel 4](images/cross-testing/C3-Desktop-Windows-Firefox-1.jpg) <br> ![Excel Data 4](images/cross-testing/C3-Desktop-Windows-Firefox-2.jpg) |
+| C3-Run-05 | Desktop | macOS 14 | Safari | Pass | ![Export Excel 5](images/cross-testing/C3-Desktop-macOS-Safari-1.jpg) <br> ![Excel Data 5-a](images/cross-testing/C3-Desktop-macOS-Safari-2.jpg) <br> ![Excel Data 5-b](images/cross-testing/C3-Desktop-macOS-Safari-3.jpg) |
+| C3-Run-06 | Tablet | Android 15 | Chrome | Pass | ![Export Excel 6](images/cross-testing/C3-Tablet-Android-Chrome-1.jpg) <br> ![Excel Data 6](images/cross-testing/C3-Tablet-Android-Chrome-2.jpg) |
+| C3-Run-07 | Phone | Android 16 | Chrome | Pass | ![Export Excel 7](images/cross-testing/C3-Phone-Android-Chrome-1.jpg) <br> ![Excel Data 7](images/cross-testing/C3-Phone-Android-Chrome-2.jpg) |
 
 <br>
 
@@ -421,8 +424,9 @@ Test how the 4 screens render and behave across the compatibility matrix (3 OS, 
 | Run ID | Thiết bị (Device) | Hệ điều hành (OS) | Trình duyệt (Browser) | Kết quả (Pass/Fail) & Ghi chú lỗi | Screenshot Link |
 |---|---|---|---|---|---|
 | C4-Run-01 | Desktop | Windows 11 | Chrome | Pass | ![Delete User Dialog 1](images/cross-testing/C4-Desktop-Windows-Chrome.jpg) |
-| C4-Run-02 | Desktop | Windows 11 | Opera | | |
-| C4-Run-03 | Desktop | Windows 11 | Edge | | |
-| C4-Run-04 | Desktop | macOS 14 | Safari | Pass | ![Delete User Dialog 4](images/cross-testing/C4-Desktop-macOS-Safari.jpg) |
-| C4-Run-05 | Tablet | Android 15 | Chrome | Pass | ![Delete User Dialog 5](images/cross-testing/C4-Tablet-Android-Chrome.jpg) |
-| C4-Run-06 | Phone | Android 16 | Chrome | Fail (Dialog xóa User rất nhỏ và để xem hết toàn bộ dialog thì phải kéo nhỏ hết mức hay kéo màn hình sang vị trí dialog) | ![Delete User Dialog 6](images/cross-testing/C4-Phone-Android-Chrome.jpg) |
+| C2-Run-02 | Desktop | Windows 11 | Opera | Pass | ![Delete User Dialog 2](images/cross-testing/C4-Desktop-Windows-Opera.jpg) |
+| C2-Run-03 | Desktop | Windows 11 | Edge | Pass | ![Delete User Dialog 3](images/cross-testing/C4-Desktop-Windows-Edge.jpg) |
+| C2-Run-04 | Desktop | Windows 11 | Firefox | Pass | ![Delete User Dialog 4](images/cross-testing/C4-Desktop-Windows-Firefox.jpg) |
+| C4-Run-05 | Desktop | macOS 14 | Safari | Pass | ![Delete User Dialog 5](images/cross-testing/C4-Desktop-macOS-Safari.jpg) |
+| C4-Run-06 | Tablet | Android 15 | Chrome | Pass | ![Delete User Dialog 6](images/cross-testing/C4-Tablet-Android-Chrome.jpg) |
+| C4-Run-07 | Phone | Android 16 | Chrome | Fail (Dialog xóa User rất nhỏ và để xem hết toàn bộ dialog thì phải kéo nhỏ hết mức hay kéo màn hình sang vị trí dialog, đồng thời không thế thấy Audit Logs created hay updated do bảng mất hầu như toàn bộ các cột) | ![Delete User Dialog 6](images/cross-testing/C4-Phone-Android-Chrome.jpg) |
