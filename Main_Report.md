@@ -313,6 +313,66 @@
 
 ## Task 2: User Testing & Usability Report
 
+### 1. Kịch bản thử nghiệm (Task Scenario)
+
+**Mục tiêu:** Đánh giá mức độ dễ dàng và tính thân thiện của hệ thống đối với người quản trị (Admin) khi thực hiện các nghiệp vụ quản lý người dùng (C1, C2, C3, C4).
+
+**Kịch bản (Dành cho người tham gia):**
+"Bạn là một quản trị viên (Admin) của hệ thống quản lý sự kiện. Nhiệm vụ của bạn là sử dụng hệ thống để quản lý tài khoản người dùng với các công việc sau:
+- Tìm kiếm, lọc và xem thông tin trên danh sách người dùng.
+- Tạo một người dùng mới và phân quyền cho người đó.
+- Xuất danh sách người dùng hiện tại ra file Excel để lưu trữ báo cáo.
+- Tìm và xóa một người dùng không còn hoạt động, sau đó xác nhận hoàn tất thao tác xóa."
+
+*(Lưu ý: Chỉ đưa ra kịch bản và mục tiêu để người dùng tự khám phá, không hướng dẫn chi tiết từng bước click chuột vào đâu).*
+
+### 2. Bảng câu hỏi SUS (SUS Questionnaire)
+
+*Thang điểm đánh giá: 1 (Hoàn toàn không đồng ý) đến 5 (Hoàn toàn đồng ý)*
+
+1. Tôi nghĩ rằng tôi sẽ muốn sử dụng hệ thống này thường xuyên.
+2. Tôi thấy hệ thống này phức tạp một cách không cần thiết.
+3. Tôi thấy hệ thống này dễ sử dụng.
+4. Tôi nghĩ rằng tôi sẽ cần sự hỗ trợ của người am hiểu kỹ thuật để có thể sử dụng hệ thống này.
+5. Tôi thấy các chức năng trong hệ thống này được tích hợp rất tốt.
+6. Tôi thấy có quá nhiều sự không nhất quán trong hệ thống này.
+7. Tôi có thể hình dung được rằng hầu hết mọi người sẽ học được cách sử dụng hệ thống này rất nhanh.
+8. Tôi thấy hệ thống này rất rườm rà và khó sử dụng.
+9. Tôi cảm thấy rất tự tin khi sử dụng hệ thống này.
+10. Tôi cần phải học rất nhiều điều trước khi có thể bắt đầu sử dụng hệ thống này.
+
+### 3. Khung Báo cáo Kết quả (Report Template)
+
+#### 3.1. Danh sách người tham gia (Participants)
+
+| STT | Họ và tên | Đối tượng (Role) | Thông tin liên hệ |
+|---|---|---|---|
+| 1 |  |  |  |
+| 2 |  |  |  |
+| 3 |  |  |  |
+| 4 |  |  |  |
+| 5 |  |  |  |
+
+#### 3.2. Bảng số liệu kiểm thử (Metrics Table)
+
+| STT | Task Success Rate<br>(Thành công / Một phần / Thất bại) | Thời gian hoàn thành<br>(Phút:Giây) | Số lỗi & Tần suất ngập ngừng<br>(Error & Hesitation Count) | Điểm SUS<br>(SUS Score) |
+|---|---|---|---|---|
+| 1 |  |  |  |  |
+| 2 |  |  |  |  |
+| 3 |  |  |  |  |
+| 4 |  |  |  |  |
+| 5 |  |  |  |  |
+| **Trung bình** | | | | |
+
+#### 3.3. Phân tích lỗi & Đề xuất (Usability Findings)
+
+| Vấn đề gặp phải (Friction points / Bugs) | Mức độ nghiêm trọng (Severity 0-4) | Đề xuất cải thiện UI/UX (Proposed Solutions) |
+|---|---|---|
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+
 ## Task 3: Cross-Browser / Cross-Platform
 
 Test how the 4 screens render and behave across the compatibility matrix (3 OS, 5 Browsers, 3 Device Classes).
