@@ -36,7 +36,7 @@ Và 2 trạng thái bao gồm:
 **Nhiệm vụ của bạn:**
 
 1. **Khám phá danh sách:** Truy cập vào danh sách người dùng, thử tìm kiếm một người dùng bất kỳ, dùng bộ lọc để xem các nhóm người dùng khác nhau và quan sát các cột thông tin.
-2. **Thêm tài khoản mới:** Tiến hành tạo một người dùng mới trên hệ thống và phân quyền phù hợp cho người đó.
+2. **Thêm tài khoản mới và chỉnh sửa:** Tiến hành tạo một người dùng mới trên hệ thống và phân quyền phù hợp cho người đó. Sau đó, tìm lại người dùng mới đó và điều chỉnh lại bất kỳ thông tin nào của họ.
 3. **Kết xuất dữ liệu (Export):** Xuất toàn bộ danh sách người dùng hiện tại ra file định dạng Excel để lưu trữ và báo cáo cho cấp trên. (Vui lòng mở thử file sau khi tải về để kiểm tra).
 4. **Dọn dẹp hệ thống (Delete):** Chọn và xóa một người dùng không còn hoạt động, sau đó đọc kỹ thông báo và xác nhận hoàn tất thao tác xóa.
 
