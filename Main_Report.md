@@ -341,6 +341,9 @@
 9. Tôi cảm thấy rất tự tin khi sử dụng hệ thống này.
 10. Tôi cần phải học rất nhiều điều trước khi có thể bắt đầu sử dụng hệ thống này.
 
+Người tham gia sau khi hoàn thành sẽ vào form từ link sau để điền câu trả lời:
+[https://forms.gle/1qjnsDcQQWjxswBY7](https://forms.gle/1qjnsDcQQWjxswBY7)
+
 ### 3. Khung Báo cáo Kết quả (Report Template)
 
 #### 3.1. Danh sách người tham gia (Participants)
@@ -364,14 +367,20 @@
 | 5 |  |  |  |  |
 | **Trung bình** | | | | |
 
-#### 3.3. Phân tích lỗi & Đề xuất (Usability Findings)
+#### 3.3. Phân tích lỗi & Vấn đề (Ranked Findings)
 
-| Vấn đề gặp phải (Friction points / Bugs) | Mức độ nghiêm trọng (Severity 0-4) | Đề xuất cải thiện UI/UX (Proposed Solutions) |
+| Vấn đề gặp phải (Friction points / Bugs) | Ảnh minh họa (Screenshot) | Mức độ nghiêm trọng (Severity 0-4) |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+|  | ![]() | 4 |
+|  | ![]() | 3 |
+|  | ![]() | 2 |
+|  | | |
+
+#### 3.4. Đề xuất cải thiện ưu tiên (Prioritised Recommendations)
+
+1. a
+2. b
+3. c
 
 ## Task 3: Cross-Browser / Cross-Platform
 
