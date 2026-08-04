@@ -22,11 +22,11 @@ Nhóm tôi đã có shared check list, và tôi đã quyết định (cũng đã
 AI đề xuất chia Scenario C thành 4 màn hình (C1 - C4) để bao phủ quy trình làm việc của Admin và tạo sẵn khung sườn báo cáo Report_ScenarioC_Template.md chứa checklist, kịch bản thử nghiệm và ma trận cross-platform.
 ```
 
-**3. Verdict:**
+**3. Verdict:** VALID
 
-**4. Reasoning:** 
+**4. Reasoning:** AI đã sinh ra khung sườn cơ bản `Report_ScenarioC_Template.md` cho `Main_Report.md` chuẩn xác với từng phần từ Checklist C1-C4, Task 2 (Usability Testing) và Task 3 (Cross-platform) như trong yêu cầu của HW03
 
-**5. Student Fix:**
+**5. Student Fix:** Không cần chỉnh sửa.
 
 ### Artifact 2: 
 **1. Prompt + Tool**
@@ -56,11 +56,11 @@ Severity · Suggested fix · Screenshot ref · Form-submission timestamp"
 AI đã cập nhật lỗi thực tế vào cột Notes của bảng C1 trong Main_Report.md, thêm phần Task 4 (Bug & Usability Findings Log) và tạo riêng file Bug_Usability_Findings_Log.md với đầy đủ cột theo yêu cầu để nộp.
 ```
 
-**3. Verdict:**
+**3. Verdict:** INCOMPLETE
 
-**4. Reasoning:** 
+**4. Reasoning:** AI đã điền những lỗi em tìm thấy vào phần Notes của màn hình C1 cũng như tạo file `Bug_Usability_Findings_Log.md` để làm nơi để bug chung với đầy đủ các cột yêu cầu. Tuy nhiên, AI có nói thêm là đã thêm "Task 4" vào `Main_Report.md`, nhưng trong HW03 chỉ có đến Task 3.
 
-**5. Student Fix:**
+**5. Student Fix:** Xóa đi phần "Task 4" (Bug/Issues Found) do AI tự sinh trong `Main_Report.md` và chỉ để tập trung các bug tìm thấy ở file `Bug_Usability_Findings_Log.md`.
 
 ### Artifact 3: 
 **1. Prompt + Tool**
@@ -80,11 +80,11 @@ Bạn hãy làm phương án 1, chuyển qua bảng C2
 AI đề xuất chuyển các lỗi liên quan đến việc điền form (Tạo mới/Chỉnh sửa User) từ màn hình C1 sang C2 để đảm bảo logic. AI đã tự động cập nhật lại tên C2 và di chuyển các tiêu chí tương ứng sang C2 trong cả báo cáo chính và log lỗi.
 ```
 
-**3. Verdict:**
+**3. Verdict:** VALID
 
-**4. Reasoning:** 
+**4. Reasoning:** AI đã thực hiện đúng yêu cầu, tách các tiêu chí và lỗi liên quan đến việc Tạo/Chỉnh sửa user (Create User) từ C1 sang bảng C2 trong `Main_Report.md`, cũng như cập nhật lại log lỗi trong `Bug_Usability_Findings_Log.md` dưới mã C2.
 
-**5. Student Fix:**
+**5. Student Fix:** Không cần chỉnh sửa.
 
 ### Artifact 4: 
 **1. Prompt + Tool**
@@ -104,18 +104,18 @@ Hiện tại thì tại C1 vẫn còn 1 số lỗi
 AI đã cập nhật lỗi đa ngôn ngữ (IA-01-04) và lỗi tìm kiếm (Functional Bug 2) vào bảng C1 trong báo cáo chính, đồng thời thêm chúng vào file Bug_Usability_Findings_Log.md kèm mô tả, độ nghiêm trọng và gợi ý sửa chữa.
 ```
 
-**3. Verdict:**
+**3. Verdict:** VALID
 
-**4. Reasoning:** 
+**4. Reasoning:** Cả 3 lỗi IA-01-04, IA-01-04, Functional Bug 2 đã được cập nhật chuẩn xác vào phần Notes ở bảng C1 và đều được đưa vào file log lỗi `Bug_Usability_Findings_Log.md` với đầy đủ thông tin.
 
-**5. Student Fix:**
+**5. Student Fix:** Không cần chỉnh sửa.
 
 ### Artifact 5: 
 **1. Prompt + Tool**
 - **Tool:** Gemini 3.5 Flash (Antigravity)
 - **Timestamp:** 15:09 28/07/2026
 - **Prompt:**
-````text
+```text
 Tôi có tìm thêm 4 lỗi nữa, bạn hãy bổ sung giúp tôi.
 Trong C1 - Users list — Search, Role/Active Filters, Columns
 - IA-01-07: Sidebar không tự động co giãn (thu lại) khi kéo nhỏ màn hình, từ đó khiến cho các cột bảng bị che khuất, không thấy được (nếu thu lại sidebar sẽ thấy được)
@@ -131,11 +131,11 @@ Trong C2 - Create / Edit User & Assign Role:
 AI đã bổ sung thêm 4 lỗi về hiển thị (Sidebar, co giãn form trên mobile) và trải nghiệm (Placeholder, Error message) vào cả bảng C1, C2 trong Main_Report.md và tạo mã lỗi tương ứng trong Bug_Usability_Findings_Log.md kèm gợi ý tên ảnh chụp.
 ```
 
-**3. Verdict:**
+**3. Verdict:** VALID
 
-**4. Reasoning:** 
+**4. Reasoning:** Cả 4 lỗi (IA-01-07 trong C1; IA-01-07, IA-02-02 và IA-02-04 trong C2) đều được cập nhập phần Notes trong Checklist C1, C2 và đưa đầy đủ vào file log lỗi `Bug_Usability_Findings_Log.md`.
 
-**5. Student Fix:**
+**5. Student Fix:** Không cần chỉnh sửa.
 
 ### Artifact 6: 
 **1. Prompt + Tool**
@@ -143,7 +143,7 @@ AI đã bổ sung thêm 4 lỗi về hiển thị (Sidebar, co giãn form trên 
 - **Timestamp:** 22:21 28/07/2026
 - **Prompt:**
 ```text
-Tôi đã đổi vị trí C3, C4. Cũng như tìm ra 6 lỗi ở phần C3, bạn hãy điền giúp tôi [Main_Report.md](file;file:///d:/DaiHoc/KiemThuPM/HW03/Main_Report.md) , [Bug_Usability_Findings_Log.md](file;file:///d:/DaiHoc/KiemThuPM/HW03/Bug_Usability_Findings_Log.md) :
+Tôi đã tìm ra 6 lỗi ở phần C3, bạn hãy điền giúp tôi [Main_Report.md](file;file:///d:/DaiHoc/KiemThuPM/HW03/Main_Report.md) , [Bug_Usability_Findings_Log.md](file;file:///d:/DaiHoc/KiemThuPM/HW03/Bug_Usability_Findings_Log.md) :
 - Functional Bug 1: Khi export file và nội dung file lên, thay vì nội dung của file hiện lên thì lại là dòng thông báo lỗi: "We found a problem with some content in 'users-export-...'. Do you want us to try to recover as much as we can? If you trust the source of this workbook, click Yes." và thông báo đã Repairs thành công sau khi ấn Yes.
 - Functional Bug 2: Hiện tại trong nội dung file, đề mục column Card Code đang bị viết sai (đúng phải để là Member Code để đồng nhất với nội dung trong C-1 và C-2)
 - IA-01-04: Nội dung, format của file export excel hiện tại chỉ cố định bằng tiếng Anh (Last Name, First Name, Email, Phone, Card Code...), không có cách hay phương thức nào để chuyển đổi sang tiếng Việt.
@@ -157,11 +157,11 @@ Tôi đã đổi vị trí C3, C4. Cũng như tìm ra 6 lỗi ở phần C3, b�
 AI đã ghi nhận 6 lỗi của chức năng Xuất Excel (màn hình C3), bao gồm lỗi hỏng file (Repair), định dạng ngày giờ, đa ngôn ngữ, mất kết nối mạng và thiếu thông báo. Cả file báo cáo chính và file log lỗi đều đã được cập nhật.
 ```
 
-**3. Verdict:**
+**3. Verdict:** VALID
 
-**4. Reasoning:** 
+**4. Reasoning:** AI đã cập nhật 6 lỗi liên quan đến ở screen C3 vào phần Notes ở bảng checklist và cả ở file log lỗi `Bug_Usability_Findings_Log.md` chính xác như trong prompt.
 
-**5. Student Fix:**
+**5. Student Fix:** Không cần chỉnh sửa.
 
 ### Artifact 7: 
 **1. Prompt + Tool**
@@ -201,11 +201,11 @@ Yêu cầu định dạng của Bug_C4.md:
 AI đã dùng Agent tự động duyệt web để kiểm thử màn hình C4. Kết quả C4 đạt điểm Pass hoàn hảo ở các tiêu chí đa ngôn ngữ, màu cảnh báo, định dạng ngày và đóng hộp thoại. AI đã cập nhật kết quả vào báo cáo và tạo file Bug_C4.md.
 ```
 
-**3. Verdict:**
+**3. Verdict:** INVALID
 
-**4. Reasoning:** 
+**4. Reasoning:** AI đã tự chạy kiểm thử màn hình C4 bằng sub-agent, kết quả cuối cùng do AI đưa ra chỉ là Pass 1 vài tiêu chí và không tìm thấy lỗi. Nên sau đó em phải tự kiểm tra lại và đã tự tìm ra 3 lỗi (IA-01-07, IA-04-01, IA-04-10).
 
-**5. Student Fix:**
+**5. Student Fix:** Tự bổ sung lại các bug đã tìm ra (IA-01-07, IA-04-01, IA-04-10), làm lại và check toàn bộ tiêu chí ở shared checklist cho phần C4.
 
 ### Artifact 8: 
 **1. Prompt + Tool**
@@ -224,11 +224,11 @@ Không hẳn là không có lỗi đâu, tôi đã tìm thấy được 3 lỗi 
 AI đã ghi nhận thêm 3 lỗi Usability mới của màn hình C4 (lỗi vỡ layout trên thiết bị nhỏ, không có toast khi xóa và không phản hồi khi mất mạng). File Bug_C4.md, log lỗi và báo cáo chính đã được cập nhật từ Pass sang Fail.
 ```
 
-**3. Verdict:**
+**3. Verdict:** VALID
 
-**4. Reasoning:** 
+**4. Reasoning:** AI đã cập nhật 3 lỗi của màn hình C4 vào phần Notes ở `Main_Report.md` và thêm chúng vào file log lỗi chung `Bug_Usability_Findings_Log.md`.
 
-**5. Student Fix:**
+**5. Student Fix:** Không cần chỉnh sửa.
 
 ### Artifact 9: 
 **1. Prompt + Tool**
@@ -245,11 +245,11 @@ mobile), 3 device classes — desktop, tablet, and phone). Phần kết quả h�
 AI đã tạo ma trận tương thích cho Task 3 (Cross-Browser/Platform) gồm 4 bảng ứng với 4 màn hình, bao quát đủ 3 hệ điều hành, 3 loại thiết bị và 5 trình duyệt để sinh viên điền kết quả.
 ```
 
-**3. Verdict:**
+**3. Verdict:** INCOMPLETE
 
-**4. Reasoning:** 
+**4. Reasoning:** AI đã tạo ra 4 bảng ma trận Cross-Platform ở Task 3 bao quát các tổ hợp hệ điều hành, trình duyệt, thiết bị theo cách tối ưu nhất. Đồng thời bảng được sinh ra ở dạng khung trống theo đúng yêu cầu để em có thể điền thông tin vào. Nhưng sau đó trong quá trình test, do thấy việc phải tự tải phần mềm browser (Firefox) khác thông qua simulator khá mất thời gian (dùng tablet trong Android Studio) nên em đã tự điều chỉnh lại cho phù hợp hơn.
 
-**5. Student Fix:**
+**5. Student Fix:** Thêm phần cấu hình chạy test cho 3 browser (Opera, Firefox, Edge) trên Windows. Đồng thời, tinh chỉnh lại các Run test khác để Tablet và điện thoại có thể trực tiếp sử dụng trình duyệt Chrome có sẵn.
 
 ### Artifact 10: 
 **1. Prompt + Tool**
@@ -265,11 +265,11 @@ Bạn hãy giúp tôi điều chỉnh lại đường link ảnh, hiện tại t
 AI đã dùng script Python tự động cập nhật hàng loạt đường dẫn hình ảnh của các lỗi (bugs) trong Bug_C4.md và Bug_Usability_Findings_Log.md sang thư mục mới `images/bug-defect/`.
 ```
 
-**3. Verdict:**
+**3. Verdict:** VALID
 
-**4. Reasoning:** 
+**4. Reasoning:** AI đã cập nhật hàng loạt đường dẫn hình ảnh thành thư mục mới `images/bug-defect/` trong file `Bug_Usability_Findings_Log.md` và không ảnh hưởng tới những phần khác.
 
-**5. Student Fix:**
+**5. Student Fix:** Không cần chỉnh sửa.
 
 ### Artifact 11: 
 **1. Prompt + Tool**
@@ -291,11 +291,11 @@ Bao gồm các Screen:
 AI đã tạo khung sườn cho Task 2 (Usability Testing) và chèn vào Main_Report.md. Khung này bao gồm kịch bản thử nghiệm hướng mục tiêu, 10 câu hỏi SUS tiếng Việt và các bảng trống cho người tham gia, số liệu và lỗi.
 ```
 
-**3. Verdict:**
+**3. Verdict:** INCOMPLETE
 
-**4. Reasoning:** 
+**4. Reasoning:** AI đã tạo đúng khung sườn cho Task 2 bên trong `Main_Report.md` bao gồm: Kịch bản thử nghiệm mục tiêu, 10 câu hỏi SUS tiếng Việt và các bảng số liệu, thông tin và chỉ số khác trong quá trình làm của người tham gia. Tuy nhiên AI đã gộp lại phần lỗi và đề xuất chỉ trong mục 3.3.
 
-**5. Student Fix:**
+**5. Student Fix:** Em đã chủ động chia mục 3.3 thành hai phần riêng biệt là `Phân tích lỗi & Vấn đề` và `Đề xuất cải thiện ưu tiên` để nội dung có thể được trình bày rành mạch và rõ ràng hơn.
 
 ### Artifact 12: 
 **1. Prompt + Tool**
@@ -311,8 +311,32 @@ Bạn hãy generate giúp tôi 1 file riêng có kịch bản để cho người
 AI đã sinh riêng file Usability_Testing_Scenario.md với định dạng rõ ràng, lịch sự để làm hướng dẫn kiểm thử cho 5 người tham gia, bao gồm kịch bản thực hành và bảng đánh giá SUS.
 ```
 
-**3. Verdict:**
+**3. Verdict:** INCOMPLETE
 
-**4. Reasoning:** 
+**4. Reasoning:** AI đã tạo file `Usability_Testing_Scenario.md` với định dạng và văn phong lịch sự, rõ ràng để hướng dẫn kiểm thử (E2E Scenario). Tuy vậy nhưng việc để cả bảng đánh giá vào file .md khiến cho việc điền điểm số khá khó khăn (nhất là với người không chuyên về CNTT - không có Visual Studio Code) cũng như scenario của AI không hề có phần nào mô tả về các trạng thái có thể có của 1 user - điều này khiến cho người tham gia khó nắm bắt nhanh được hệ thống có thể sử dụng ra sao.
 
-**5. Student Fix:**
+**5. Student Fix:** Em đã bổ sung thêm vào scenario testing một phần lưu ý nhỏ để người tham gia hiểu rõ hơn về trạng thái và role có thể có của 1 tài khoản. Đồng thời,  em đã tạo một Form Google Docs cho 10 câu hỏi SUS giúp người tham gia dễ dàng chấm điểm, thay thế cho bảng tự đánh giá trong file .md.
+
+## Đánh giá & Kết luận
+
+### Đánh giá độ chính xác của AI
+* **VALID: 7/12 (58.3%)**
+  *(Artifact 1, Artifact 3, Artifact 4, Artifact 5, Artifact 6, Artifact 8, Artifact 10).*
+* **INCOMPLETE: 4/12 (33.3%)**
+  *(Artifact 2, Artifact 9, Artifact 11, Artifact 12).*
+* **INVALID: 1/12 (8.3%)**
+  *(Artifact 7).*
+
+### Kết luận
+Thông qua quá trình thực hiện bài tập và đối chiếu kết quả, em rút ra kết luận về việc ứng dụng AI như sau:
+
+**Khi nào nên dùng AI:**
+1. Khi cần khởi tạo tài liệu và tạo nhanh khung sườn báo cáo, kịch bản thử nghiệm E2E, ma trận kiểm thử và các cấu trúc bảng biểu ban đầu.
+2. Khi cần tái cấu trúc, đồng bộ và hỗ trợ phân tích bố cục tài liệu hợp lý (như tách lỗi form C1 sang C2) và đồng bộ nội dung giữa các file.
+3. Khi cần viết script tự động hóa (như Python script) để xử lý dữ liệu lặp lại hàng loạt (đổi đường dẫn ảnh).
+4. Khi cần chuẩn hóa dữ liệu thô, chuyển đổi nhanh mô tả lỗi thô thành bảng log lỗi chi tiết, đúng định dạng.
+
+**Khi nào không nên dùng AI:**
+1. Khi cần kiểm thử các lỗi edge case và lỗi thuộc giao diện đặc thù, AI (Vision/Browser Agent) dễ bỏ sót lỗi khi mất mạng, thiếu phản hồi Toast hoặc vỡ giao diện trên màn hình quá nhỏ (iPhone SE). Cần phải có con người can thiệp thủ công để kiểm chứng.
+2. Khi cần tối ưu trải nghiệm thực tế, do AI thiếu tính thực tế khi tạo bảng SUS dạng Markdown khó điền hoặc viết kịch bản thiếu vai trò/trạng thái người dùng.
+3. Khi cần cấu hình ma trận kiểm thử thực tế, do ma trận đề xuất của AI thường quá rộng và mang tính lý thuyết. Nên việc tự tinh chỉnh là cần thiết để có thể tối ưu hóa thời gian và tài nguyên dựa trên thiết bị thực tế có sẵn.

@@ -401,8 +401,6 @@ Chú thích định nghĩa **Task Success Rate** cho từng mức độ:*
 
 ## Task 3: Cross-Browser / Cross-Platform
 
-Test how the 4 screens render and behave across the compatibility matrix (3 OS, 5 Browsers, 3 Device Classes).
-
 ### 1. C1 - Users List — Search, Role/Active Filters, Columns
 
 | Run ID | Thiết bị (Device) | Hệ điều hành (OS) | Trình duyệt (Browser) | Kết quả (Pass/Fail) & Ghi chú lỗi | Screenshot Link |
