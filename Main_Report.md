@@ -317,6 +317,18 @@
 
 **Mục tiêu:** Đánh giá mức độ dễ dàng và tính thân thiện của hệ thống đối với người quản trị (Admin) khi thực hiện các nghiệp vụ quản lý người dùng (C1, C2, C3, C4).
 
+**Lưu ý:**
+
+Mỗi tài khoản trong hệ thống có 4 vai trò bao gồm:
+1. Quản trị - Admin
+2. Khách - Guest
+3. Giảng viên - Lecturer
+4. Sinh viên - Student 
+
+Và 2 trạng thái bao gồm:
+1. Hoạt động - Active
+2. Không hoạt động - Inactive
+
 **Kịch bản (Dành cho người tham gia):**
 "Bạn là một quản trị viên (Admin) của hệ thống quản lý sự kiện. Nhiệm vụ của bạn là sử dụng hệ thống để quản lý tài khoản người dùng với các công việc sau:
 - Tìm kiếm, lọc và xem thông tin trên danh sách người dùng.
@@ -350,20 +362,25 @@ Người tham gia sau khi hoàn thành sẽ vào form từ link sau để điề
 
 | STT | Họ và tên | Đối tượng (Role) | Thông tin liên hệ |
 |---|---|---|---|
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
+| 1 | Nguyễn Tấn Đạt | Sinh viên | 033xxxx851 |
+| 2 | Nguyễn Thị Cẩm Nhung | Sinh viên |  |
+| 3 | Nguyễn Tuấn Kiệt | Sinh viên |  |
+| 4 | Dương Thúy Mi | Giáo viên |  |
 | 5 |  |  |  |
 
 #### 3.2. Bảng số liệu kiểm thử (Metrics Table)
 
+Chú thích định nghĩa **Task Success Rate** cho từng mức độ:*
+- **Thành công (Success):** Người dùng tự hoàn thành toàn bộ kịch bản (C1 đến C4) mà không cần bất kỳ sự can thiệp hay chỉ dẫn nào từ bạn. Họ có thể gặp lỗi nhưng tự phát hiện và tự khắc phục được.
+- **Một phần (Partial Success):** Người dùng hoàn thành được phần lớn kịch bản nhưng phải cần tới sự gợi ý/trợ giúp từ bạn để vượt qua điểm nghẽn, hoặc chỉ hoàn thành được một số nhiệm vụ (ví dụ: tạo và lọc được người dùng nhưng không xuất được file hoặc không xóa được).
+- **Thất bại (Failure):** Người dùng bỏ cuộc giữa chừng, vượt quá thời gian cho phép (time-out) mà chưa làm xong, hoặc đi sai hướng hoàn toàn dẫn đến kết quả sai lệch nghiêm trọng mà không tự khắc phục được.
+
 | STT | Task Success Rate<br>(Thành công / Một phần / Thất bại) | Thời gian hoàn thành<br>(Phút:Giây) | Số lỗi & Tần suất ngập ngừng<br>(Error & Hesitation Count) | Điểm SUS<br>(SUS Score) |
 |---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
+| 1 | Một phần | 6:39 | 2 | 100  |
+| 2 | Một phần | 6:40 | 2 | 90 |
+| 3 | Một phần | 6:52 | 2 | 87.5 |
+| 4 | Một phần | 3:49 | 2 | 97.5 |
 | 5 |  |  |  |  |
 | **Trung bình** | | | | |
 
@@ -378,8 +395,8 @@ Người tham gia sau khi hoàn thành sẽ vào form từ link sau để điề
 
 #### 3.4. Đề xuất cải thiện ưu tiên (Prioritised Recommendations)
 
-1. a
-2. b
+1. Làm rõ bộ lọc thông tin khi tìm kiếm 
+2. Cải thiện tính năng tìm kiếm
 3. c
 
 ## Task 3: Cross-Browser / Cross-Platform
