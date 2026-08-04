@@ -19,48 +19,7 @@ Nhóm tôi đã có shared check list, và tôi đã quyết định (cũng đã
 
 **2. AI Output:**
 ```text
-Viewed shared_gui_checklist.md:1-58
-Created Report_ScenarioC_Template.md
-
-Lựa chọn **Scenario C (Admin manages users) với 4 screens** là một quyết định rất chuẩn xác vì nó bao phủ trọn vẹn luồng công việc của một Quản trị viên. 
-
-Dựa trên yêu cầu của đề bài, 4 màn hình (screens) thuộc Scenario C của bạn sẽ là:
-1. **(C1) Users list:** Giao diện xem danh sách, bộ lọc tìm kiếm, bộ lọc role/active.
-2. **(C2) Assign Role / edit user:** Giao diện/Form cấp quyền và chỉnh sửa người dùng.
-3. **(C3) Block-Unblock and Reset-Password:** Các hộp thoại (dialogs) xác nhận khóa/mở khóa và đổi mật khẩu.
-4. **(C4) Export to Excel:** Chức năng xuất file Excel và các thông báo trạng thái tải xuống.
-
-Để giúp bạn tiết kiệm thời gian, tôi đã tạo sẵn một file Template Báo Cáo định dạng Markdown chứa khung sườn cho cả 3 Task (1B, 2, 3) tại đây: [Report_ScenarioC_Template.md](file:///d:/DaiHoc/KiemThuPM/HW03/Report_ScenarioC_Template.md).
-
-Dưới đây là hướng dẫn chi tiết cách bạn cần tiến hành các bước tiếp theo:
-
-### 🎯 Task 1B: Thực thi GUI Checklist (Tự làm)
-1. Truy cập vào đường link SUT (ngrok URL) được cung cấp trong đề.
-2. **Đăng nhập bằng tài khoản Admin:** `admin@gmail.com` / `Admin@123`.
-3. Mở file [shared_gui_checklist.md](file:///d:/DaiHoc/KiemThuPM/HW03/shared_gui_checklist.md) của nhóm lên. Lần lượt đi qua 4 màn hình (C1 -> C4) và chấm điểm **Pass / Fail / N/A** cho từng tiêu chí.
-4. Chụp lại màn hình với những mục bị **Fail** và ghi chú lý do. (Ví dụ: Chữ bị vỡ khi xem trên màn hình nhỏ, hoặc không có xác nhận khi xóa).
-5. Đưa các lỗi này vào file log chung của nhóm và điền Google Form.
-
-### 👥 Task 2: Kiểm thử tính khả dụng (Usability Testing)
-Tôi đã giúp bạn thiết kế kịch bản hướng mục tiêu (Goal-oriented) trong file Template. Bạn hãy đưa kịch bản này cho 5 người dùng thực tế thực hiện:
-
-> **Kịch bản cho người test:**
-> *"Bạn là quản trị viên hệ thống của khoa. Hãy tìm kiếm một người dùng tên là 'Nguyen Van A' (hoặc một tên cụ thể có trong hệ thống) trong danh sách. Hãy cấp quyền 'Lecturer' cho người này. Sau đó, hãy thử khóa (block) tài khoản của họ và cuối cùng là xuất danh sách toàn bộ người dùng ra file Excel để báo cáo."*
-
-**Lưu ý khi test:** 
-- Bạn chỉ quan sát họ làm, không hướng dẫn click ở đâu.
-- Yêu cầu họ "think aloud" (nghĩ gì nói nấy). Ví dụ họ phàn nàn: *"Sao cái nút lọc quyền khó tìm thế nhỉ?"* -> Ghi chú ngay lại, đó chính là 1 lỗi Usability.
-- Cuối cùng, cho họ chấm điểm SUS (hoặc UEQ-S).
-
-### 📱 Task 3: Test Đa nền tảng (Cross-Browser / Cross-Platform)
-Mục tiêu là kiểm tra xem 4 màn hình trên có bị lỗi hiển thị (tràn viền, vỡ nút...) trên các thiết bị khác nhau không. Bạn hãy dùng **BrowserStack** hoặc **LambdaTest** để làm.
-- Cần có ít nhất **3 Hệ điều hành** (VD: Windows, macOS, Android).
-- Cần có ít nhất **5 Trình duyệt** (VD: Chrome, Safari, Edge, Firefox, Opera).
-- Cần đủ **3 Loại thiết bị** (Desktop, Tablet, Phone).
-
-> **⚠️ BẮT BUỘC:** Đừng quên chèn watermark dạng `MSSV@....edu.vn` của bạn vào ảnh chụp màn hình đa nền tảng để tránh bị trừ 0 điểm.
-
-Bạn đã cài đặt và tạo tài khoản BrowserStack/LambdaTest chưa? Nếu bạn cần, tôi có thể hướng dẫn cách kết hợp các tổ hợp thiết bị sao cho tối ưu nhất (ít phải test nhất mà vẫn đủ điều kiện).
+AI đề xuất chia Scenario C thành 4 màn hình (C1 - C4) để bao phủ quy trình làm việc của Admin và tạo sẵn khung sườn báo cáo Report_ScenarioC_Template.md chứa checklist, kịch bản thử nghiệm và ma trận cross-platform.
 ```
 
 **3. Verdict:**
@@ -72,7 +31,7 @@ Bạn đã cài đặt và tạo tài khoản BrowserStack/LambdaTest chưa? N�
 ### Artifact 2: 
 **1. Prompt + Tool**
 - **Tool:** Gemini 3.5 Flash (Antigravity)
-- **Timestamp:** 20:50 26/07/2026
+- **Timestamp:** 13:25 28/07/2026
 - **Prompt:**
 ```text
 [Main_Report.md](file;file:///d:/DaiHoc/KiemThuPM/HW03/Main_Report.md) 
@@ -93,6 +52,9 @@ Severity · Suggested fix · Screenshot ref · Form-submission timestamp"
 ```
 
 **2. AI Output:**
+```text
+AI đã cập nhật lỗi thực tế vào cột Notes của bảng C1 trong Main_Report.md, thêm phần Task 4 (Bug & Usability Findings Log) và tạo riêng file Bug_Usability_Findings_Log.md với đầy đủ cột theo yêu cầu để nộp.
+```
 
 **3. Verdict:**
 
@@ -103,7 +65,7 @@ Severity · Suggested fix · Screenshot ref · Form-submission timestamp"
 ### Artifact 3: 
 **1. Prompt + Tool**
 - **Tool:** Gemini 3.5 Flash (Antigravity)
-- **Timestamp:** 13:51 28/07/2026
+- **Timestamp:** 13:49 - 13:51 28/07/2026
 - **Prompt:**
 ```text
 Screen của tôi hiện tại chỉ là "- C1 - Users list — search, role/active filters, columns", nhưng tôi đã lỡ làm luôn cả tính năng create user trong đây, giờ tôi nên làm gì?
@@ -114,6 +76,9 @@ Bạn hãy làm phương án 1, chuyển qua bảng C2
 ```
 
 **2. AI Output:**
+```text
+AI đề xuất chuyển các lỗi liên quan đến việc điền form (Tạo mới/Chỉnh sửa User) từ màn hình C1 sang C2 để đảm bảo logic. AI đã tự động cập nhật lại tên C2 và di chuyển các tiêu chí tương ứng sang C2 trong cả báo cáo chính và log lỗi.
+```
 
 **3. Verdict:**
 
@@ -123,7 +88,7 @@ Bạn hãy làm phương án 1, chuyển qua bảng C2
 
 ### Artifact 4: 
 **1. Prompt + Tool**
-- **Tool:** Gemini 3.5 Flash
+- **Tool:** Gemini 3.5 Flash (Antigravity)
 - **Timestamp:** 14:20 28/07/2026
 - **Prompt:**
 ```text
@@ -136,26 +101,7 @@ Hiện tại thì tại C1 vẫn còn 1 số lỗi
 
 **2. AI Output:**
 ```text
-Viewed Main_Report.md:310-330
-Edited Main_Report.md
-Viewed Main_Report.md:75-90
-Edited Main_Report.md
-Created Bug_Usability_Findings_Log.md
-
-Tôi đã thực hiện cập nhật thêm các lỗi mới bạn vừa phát hiện vào cả báo cáo chính lẫn file log lỗi:
-
-### 1. Cập nhật trong file báo cáo chính ([Main_Report.md](file:///d:/DaiHoc/KiemThuPM/HW03/Main_Report.md))
-*   **Bảng C1 - Tiêu chí `IA-01-04`:** Đã chuyển lại từ `Pass` thành `Fail` kèm ghi chú mô tả lỗi thực tế: Khi nhập số trang sai định dạng trong ô "Đến trang" (ví dụ nhập 11/10 hoặc nhập -1) lúc giao diện đang ở tiếng Việt, trình duyệt hiển thị thông báo lỗi hoàn toàn bằng tiếng Anh (`Value must be...`).
-*   **Bổ sung 2 lỗi mới vào bảng Task 4:**
-    *   `BUG-C1-03`: Lỗi hiển thị đa ngôn ngữ (i18n) cho thông báo validation ở ô nhập số trang phân trang (`IA-01-04`).
-    *   `BUG-C1-04` (Functional Bug 2): Lỗi tìm kiếm không chính xác khi gõ đầy đủ họ và tên của user (ví dụ: tìm "Nguyễn Hoàng Kỳ" bị lỗi rỗng, trong khi tìm "Nguyễn Hoàng" thì bình thường).
-
-### 2. Cập nhật trong file log lỗi độc lập ([Bug_Usability_Findings_Log.md](file:///d:/DaiHoc/KiemThuPM/HW03/Bug_Usability_Findings_Log.md))
-*   Đã thêm 2 lỗi `BUG-C1-03` và `BUG-C1-04` với đầy đủ các cột thông tin: Mô tả chi tiết lỗi, các bước tái hiện, độ nghiêm trọng đề xuất (Severity), hướng sửa đổi (Suggested fix) và tên ảnh chụp màn hình tương ứng.
-
-Các lỗi này đều rất thực tế và có tính thuyết phục cao đối với giảng viên khi chấm điểm kiểm thử giao diện & độ khả dụng.
-
-Bạn có muốn tiếp tục hoàn thiện phần nào khác không, ví dụ như đề xuất ma trận tương thích cho **Task 3** hoặc viết báo cáo kiểm thử người dùng **Task 2**?
+AI đã cập nhật lỗi đa ngôn ngữ (IA-01-04) và lỗi tìm kiếm (Functional Bug 2) vào bảng C1 trong báo cáo chính, đồng thời thêm chúng vào file Bug_Usability_Findings_Log.md kèm mô tả, độ nghiêm trọng và gợi ý sửa chữa.
 ```
 
 **3. Verdict:**
@@ -166,22 +112,8 @@ Bạn có muốn tiếp tục hoàn thiện phần nào khác không, ví dụ n
 
 ### Artifact 5: 
 **1. Prompt + Tool**
-- **Tool:** Gemini 3.5 Flash
-- **Timestamp:** 09:14 30/06/2026
-- **Prompt:**
-
-**2. AI Output:**
-
-**3. Verdict:**
-
-**4. Reasoning:** 
-
-**5. Student Fix:**
-
-### Artifact 6: 
-**1. Prompt + Tool**
-- **Tool:** 
-- **Timestamp:** 09:14 30/06/2026
+- **Tool:** Gemini 3.5 Flash (Antigravity)
+- **Timestamp:** 15:09 28/07/2026
 - **Prompt:**
 ````text
 Tôi có tìm thêm 4 lỗi nữa, bạn hãy bổ sung giúp tôi.
@@ -196,32 +128,34 @@ Trong C2 - Create / Edit User & Assign Role:
 
 **2. AI Output:**
 ```text
-Viewed Main_Report.md:75-110
-Edited Main_Report.md
-Viewed Main_Report.md:137-165
-Edited Main_Report.md
-Created Bug_Usability_Findings_Log.md
+AI đã bổ sung thêm 4 lỗi về hiển thị (Sidebar, co giãn form trên mobile) và trải nghiệm (Placeholder, Error message) vào cả bảng C1, C2 trong Main_Report.md và tạo mã lỗi tương ứng trong Bug_Usability_Findings_Log.md kèm gợi ý tên ảnh chụp.
+```
 
-Tôi đã bổ sung thành công 4 lỗi mới vào cả hai tài liệu kiểm thử của bạn:
+**3. Verdict:**
 
-### 1. Cập nhật trong báo cáo chính ([Main_Report.md](file:///d:/DaiHoc/KiemThuPM/HW03/Main_Report.md))
-*   **Bảng C1 (Users List):** Tiêu chí `IA-01-07` (Responsive) đã được sửa thành `Fail` kèm ghi chú về việc sidebar không tự động thu gọn khi thu nhỏ màn hình khiến các cột dữ liệu của bảng bị che khuất.
-*   **Bảng C2 (Create / Edit User):**
-    *   Tiêu chí `IA-01-07` (Responsive) sửa thành `Fail`: Lỗi form hiển thị quá bé và khó thao tác trên giao diện mobile (zoom out quá mức).
-    *   Tiêu chí `IA-02-02` (Labels & Placeholders) sửa thành `Fail`: Lỗi hoán đổi placeholder gợi ý của trường First Name và Last Name cho nhau.
-    *   Tiêu chí `IA-02-04` (Error messages) sửa thành `Fail`: Lỗi thông báo quá chung chung `"Invalid email address"` khi người dùng gõ thiếu đuôi tên miền (như `"abc@abccom"`).
+**4. Reasoning:** 
 
-### 2. Cập nhật trong file log lỗi độc lập ([Bug_Usability_Findings_Log.md](file:///d:/DaiHoc/KiemThuPM/HW03/Bug_Usability_Findings_Log.md))
-Tôi đã thêm 4 dòng lỗi này vào bảng log với các mã định danh tương ứng và đề xuất sẵn tên file ảnh nhúng để bạn tiện lưu trữ trong folder `images`:
-*   `BUG-C1-05` (Lỗi sidebar): Đặt tên ảnh là `Screen-C1-IA-01-07.jpg`.
-*   `BUG-C2-07` (Lỗi co giãn form trên mobile): Đặt tên ảnh là `Screen-C2-IA-01-07.jpg`.
-*   `BUG-C2-08` (Lỗi tráo đổi placeholder): Đặt tên ảnh là `Screen-C2-IA-02-02.jpg`.
-*   `BUG-C2-09` (Lỗi email không rõ ràng): Đặt tên ảnh là `Screen-C2-IA-02-04.jpg`.
+**5. Student Fix:**
 
-*Mẹo: Bạn chỉ cần chụp màn hình 4 lỗi này trên SUT, đặt tên theo gợi ý trên rồi lưu vào thư mục `images` là file log sẽ tự động tải và hiển thị ảnh cực kỳ đẹp mắt khi xuất ra file nộp.*
+### Artifact 6: 
+**1. Prompt + Tool**
+- **Tool:** Gemini 3.5 Flash (Antigravity)
+- **Timestamp:** 22:21 28/07/2026
+- **Prompt:**
+```text
+Tôi đã đổi vị trí C3, C4. Cũng như tìm ra 6 lỗi ở phần C3, bạn hãy điền giúp tôi [Main_Report.md](file;file:///d:/DaiHoc/KiemThuPM/HW03/Main_Report.md) , [Bug_Usability_Findings_Log.md](file;file:///d:/DaiHoc/KiemThuPM/HW03/Bug_Usability_Findings_Log.md) :
+- Functional Bug 1: Khi export file và nội dung file lên, thay vì nội dung của file hiện lên thì lại là dòng thông báo lỗi: "We found a problem with some content in 'users-export-...'. Do you want us to try to recover as much as we can? If you trust the source of this workbook, click Yes." và thông báo đã Repairs thành công sau khi ấn Yes.
+- Functional Bug 2: Hiện tại trong nội dung file, đề mục column Card Code đang bị viết sai (đúng phải để là Member Code để đồng nhất với nội dung trong C-1 và C-2)
+- IA-01-04: Nội dung, format của file export excel hiện tại chỉ cố định bằng tiếng Anh (Last Name, First Name, Email, Phone, Card Code...), không có cách hay phương thức nào để chuyển đổi sang tiếng Việt.
+- IA-02-09: Hiện tại mục column Created At đang để đúng định dạng format dễ đọc, chuẩn Việt Nam (dd/mm/yyyy giờ:phút), nhưng ngay dưới đề mục USER REPORT lại để nội dung là: "Export date: 7/28/2026 | Exporter: Admin Tôi là" (theo định dạng m/d/yyyy).
+- IA-04-01: Sau khi export và tải file thành công về, trang hiển thị hiện tại không có bất kỳ toast gì về việc đã export và lưu file thành công.
+- IA-04-10: Khi đang bị mất internet và ấn nút Export (Xuất), hệ thống không có thông báo hay toast thông báo lỗi cho người dùng (sau khi nhấn không có gì xảy ra cả)
+```
 
-Bạn có cần hỗ trợ hoàn thiện nốt phần nào khác cho báo cáo (ví dụ: Task 3 - Cross Platform, hay Task 11 - AI Critique) không?
-````
+**2. AI Output:**
+```text
+AI đã ghi nhận 6 lỗi của chức năng Xuất Excel (màn hình C3), bao gồm lỗi hỏng file (Repair), định dạng ngày giờ, đa ngôn ngữ, mất kết nối mạng và thiếu thông báo. Cả file báo cáo chính và file log lỗi đều đã được cập nhật.
+```
 
 **3. Verdict:**
 
@@ -231,11 +165,41 @@ Bạn có cần hỗ trợ hoàn thiện nốt phần nào khác cho báo cáo (
 
 ### Artifact 7: 
 **1. Prompt + Tool**
-- **Tool:**
-- **Timestamp:** 09:14 30/06/2026
+- **Tool:** Gemini 3.1 Pro (Antigravity)
+- **Timestamp:** 15:32 29/07/2026
 - **Prompt:**
+```text
+/browser Hãy thực hiện kiểm thử tự động giao diện (GUI Usability) đối với màn hình C4 - Delete User Confirmation Dialog & Audit Logs trên môi trường web.
+Các bước thực hiện:
+1. Truy cập trang chủ: https://prod-dev.ems-fitus.cloud/
+2. Đăng nhập với tài khoản:
+   - Email: admin@gmail.com
+   - Mật khẩu: Admin@123
+3. Điều hướng tới trang Quản trị danh sách người dùng: https://prod-dev.ems-fitus.cloud/dashboard/admin/users
+4. Thao tác kích hoạt phần C4 (Delete User Dialog):
+   - Tìm một người dùng trong bảng danh sách và nhấn vào biểu tượng Thùng rác màu đỏ (Delete User icon).
+   - Khi hộp thoại xác nhận xóa (Delete Confirmation Dialog) hiện lên, hãy chụp ảnh màn hình lại.
+   - Thử rê chuột (hover) vào nút Xác nhận (Delete) và nút Hủy (Cancel) để xem hiệu ứng hover, thử tắt hộp thoại bằng cách click ra ngoài (backdrop click) hoặc nhấn Esc để kiểm tra tính năng đóng.
+5. Thao tác kiểm tra phần C4 (Audit Created & Updated):
+   - Quan sát các cột hoặc khu vực hiển thị thông tin Audit (ngày tạo Created At, ngày cập nhật Updated At, người tạo/cập nhật nếu có).
+   - Chụp ảnh màn hình các cột/thông tin này.
+6. Đọc checklist từ tệp: d:\DaiHoc\KiemThuPM\HW03\shared_gui_checklist.md
+7. Đối chiếu các ảnh chụp màn hình C4 với checklist để tìm lỗi giao diện (UI/UX) và lỗi trải nghiệm người dùng (Usability) liên quan đến:
+   - Màu sắc cảnh báo của nút hành động nguy hiểm (IA-04-06)
+   - Đa ngôn ngữ trên popup cảnh báo xóa (IA-01-04)
+   - Đóng popup an toàn (IA-03-03 / IA-04-03)
+   - Định dạng ngày giờ hiển thị ở phần Audit (IA-02-09)
+8. Tạo một tệp mới tên là d:\DaiHoc\KiemThuPM\HW03\Bug_C4.md và ghi nhận kết quả dưới dạng Markdown với bảng danh sách lỗi phát hiện được. 
+Yêu cầu định dạng của Bug_C4.md:
+- Mỗi lỗi phải có ID dạng BUG-C4-XX.
+- Cột "Steps/Heuristic" phải được định dạng theo cấu trúc: **Mã_Heuristic**<br>1. Bước 1<br>2. Bước 2... (sử dụng thẻ <br> thay vì ký tự ->).
+- Nếu không phát hiện lỗi nào, hãy ghi nhận màn hình đạt chuẩn và lập bảng liệt kê các điểm sáng thiết kế đạt điểm Pass.
+```
 
 **2. AI Output:**
+```text
+AI đã dùng Agent tự động duyệt web để kiểm thử màn hình C4. Kết quả C4 đạt điểm Pass hoàn hảo ở các tiêu chí đa ngôn ngữ, màu cảnh báo, định dạng ngày và đóng hộp thoại. AI đã cập nhật kết quả vào báo cáo và tạo file Bug_C4.md.
+```
 
 **3. Verdict:**
 
@@ -245,11 +209,20 @@ Bạn có cần hỗ trợ hoàn thiện nốt phần nào khác cho báo cáo (
 
 ### Artifact 8: 
 **1. Prompt + Tool**
-- **Tool:**
-- **Timestamp:** 09:14 30/06/2026
+- **Tool:** Gemini 3.5 Flash (Antigravity)
+- **Timestamp:** 1:06 30/07/2026
 - **Prompt:**
+```text
+Không hẳn là không có lỗi đâu, tôi đã tìm thấy được 3 lỗi của phần C4
+- IA-01-07: Khi sử dụng các thiết bị như iPhone SE, hay iPhone bằng devtool trên web hoặc cửa số đủ nhỏ, bản thân giao diện user management đã bị hỏng (mất hết các cột, khó chọn) và đồng thời còn bị 1 vấn đề là tôi phải kéo màn hình để di chuyển đến nội dung dialog hiện lên (delete user dialog)
+- IA-04-01: Sau khi xóa không có toast hay thông báo để cho người dùng biết là đã xóa thành công user rồi
+- IA-04-10: Khi mất internet, vẫn có thể bấm vào nút delete (thùng rác) để mở dialog xóa user, nhưng nó bị 1 vấn đề là khi bấm Xác nhận, không có gì xyả ra cả, không có thông báo cũng như toast hay gì hiện lên
+```
 
 **2. AI Output:**
+```text
+AI đã ghi nhận thêm 3 lỗi Usability mới của màn hình C4 (lỗi vỡ layout trên thiết bị nhỏ, không có toast khi xóa và không phản hồi khi mất mạng). File Bug_C4.md, log lỗi và báo cáo chính đã được cập nhật từ Pass sang Fail.
+```
 
 **3. Verdict:**
 
@@ -259,11 +232,18 @@ Bạn có cần hỗ trợ hoàn thiện nốt phần nào khác cho báo cáo (
 
 ### Artifact 9: 
 **1. Prompt + Tool**
-- **Tool:**
-- **Timestamp:** 09:14 30/06/2026
+- **Tool:** Gemini 3.5 Flash (Antigravity)
+- **Timestamp:** 15:42 30/07/2026
 - **Prompt:**
+```text
+Bạn hãy generate giúp tôi bảng ở Task 3 cho gọn gàng và bao trọn hết 4 screen với (3 operating systems — e.g. Windows, macOS, and Android or iOS, 5 browsers — e.g. Chrome, Firefox, Safari, Edge, and Opera (or Samsung Internet on 
+mobile), 3 device classes — desktop, tablet, and phone). Phần kết quả hãy để tôi điền (để trống)
+```
 
 **2. AI Output:**
+```text
+AI đã tạo ma trận tương thích cho Task 3 (Cross-Browser/Platform) gồm 4 bảng ứng với 4 màn hình, bao quát đủ 3 hệ điều hành, 3 loại thiết bị và 5 trình duyệt để sinh viên điền kết quả.
+```
 
 **3. Verdict:**
 
@@ -273,11 +253,17 @@ Bạn có cần hỗ trợ hoàn thiện nốt phần nào khác cho báo cáo (
 
 ### Artifact 10: 
 **1. Prompt + Tool**
-- **Tool:**
-- **Timestamp:** 09:14 30/06/2026
+- **Tool:** Gemini 3.5 Flash (Antigravity)
+- **Timestamp:** 16:47 30/07/2026
 - **Prompt:**
+```text
+Bạn hãy giúp tôi điều chỉnh lại đường link ảnh, hiện tại thay vì vào thẳng images/tên file ảnh. Thì giờ tôi dời vào thêm 1 folder nữa (thành images/bug-defect/tên file ảnh)
+```
 
 **2. AI Output:**
+```text
+AI đã dùng script Python tự động cập nhật hàng loạt đường dẫn hình ảnh của các lỗi (bugs) trong Bug_C4.md và Bug_Usability_Findings_Log.md sang thư mục mới `images/bug-defect/`.
+```
 
 **3. Verdict:**
 
@@ -287,11 +273,23 @@ Bạn có cần hỗ trợ hoàn thiện nốt phần nào khác cho báo cáo (
 
 ### Artifact 11: 
 **1. Prompt + Tool**
-- **Tool:**
-- **Timestamp:** 09:14 30/06/2026
+- **Tool:** Gemini 3.1 Pro (Antigravity)
+- **Timestamp:** 15:22 31/07/2026
 - **Prompt:**
+```text
+Bạn hãy viết khung sườn cho phần Task 2 Scenario C — Admin manages users (Function group: user administration).
+
+Bao gồm các Screen:
+- C1 - Users List — Search, Role/Active Filters, Columns
+- C2 - Create / Edit User & Assign Role
+- C3 - Export to Excel — Column Completeness and Download Feedback
+- C4 - Delete User Confirmation Dialog & Audit Logs
+```
 
 **2. AI Output:**
+```text
+AI đã tạo khung sườn cho Task 2 (Usability Testing) và chèn vào Main_Report.md. Khung này bao gồm kịch bản thử nghiệm hướng mục tiêu, 10 câu hỏi SUS tiếng Việt và các bảng trống cho người tham gia, số liệu và lỗi.
+```
 
 **3. Verdict:**
 
@@ -301,123 +299,17 @@ Bạn có cần hỗ trợ hoàn thiện nốt phần nào khác cho báo cáo (
 
 ### Artifact 12: 
 **1. Prompt + Tool**
-- **Tool:**
-- **Timestamp:** 09:14 30/06/2026
+- **Tool:** Gemini 3.5 Flash (Antigravity)
+- **Timestamp:** 21:07 01/08/2026
 - **Prompt:**
+```text
+Bạn hãy generate giúp tôi 1 file riêng có kịch bản để cho người dùng E2E đọc (1 file .md tôi sẽ tự xuất pdf sau)
+```
 
 **2. AI Output:**
-
-**3. Verdict:**
-
-**4. Reasoning:** 
-
-**5. Student Fix:**
-
-### Artifact 13: 
-**1. Prompt + Tool**
-- **Tool:**
-- **Timestamp:** 09:14 30/06/2026
-- **Prompt:**
-
-**2. AI Output:**
-
-**3. Verdict:**
-
-**4. Reasoning:** 
-
-**5. Student Fix:**
-
-### Artifact 14: 
-**1. Prompt + Tool**
-- **Tool:**
-- **Timestamp:** 09:14 30/06/2026
-- **Prompt:**
-
-**2. AI Output:**
-
-**3. Verdict:**
-
-**4. Reasoning:** 
-
-**5. Student Fix:**
-
-### Artifact 15: 
-**1. Prompt + Tool**
-- **Tool:**
-- **Timestamp:** 09:14 30/06/2026
-- **Prompt:**
-
-**2. AI Output:**
-
-**3. Verdict:**
-
-**4. Reasoning:** 
-
-**5. Student Fix:**
-
-### Artifact 16: 
-**1. Prompt + Tool**
-- **Tool:**
-- **Timestamp:** 09:14 30/06/2026
-- **Prompt:**
-
-**2. AI Output:**
-
-**3. Verdict:**
-
-**4. Reasoning:** 
-
-**5. Student Fix:**
-
-### Artifact 17: 
-**1. Prompt + Tool**
-- **Tool:**
-- **Timestamp:** 09:14 30/06/2026
-- **Prompt:**
-
-**2. AI Output:**
-
-**3. Verdict:**
-
-**4. Reasoning:** 
-
-**5. Student Fix:**
-
-### Artifact 18: 
-**1. Prompt + Tool**
-- **Tool:**
-- **Timestamp:** 09:14 30/06/2026
-- **Prompt:**
-
-**2. AI Output:**
-
-**3. Verdict:**
-
-**4. Reasoning:** 
-
-**5. Student Fix:**
-
-### Artifact 19: 
-**1. Prompt + Tool**
-- **Tool:**
-- **Timestamp:** 09:14 30/06/2026
-- **Prompt:**
-
-**2. AI Output:**
-
-**3. Verdict:**
-
-**4. Reasoning:** 
-
-**5. Student Fix:**
-
-### Artifact 20: 
-**1. Prompt + Tool**
-- **Tool:**
-- **Timestamp:** 09:14 30/06/2026
-- **Prompt:**
-
-**2. AI Output:**
+```text
+AI đã sinh riêng file Usability_Testing_Scenario.md với định dạng rõ ràng, lịch sự để làm hướng dẫn kiểm thử cho 5 người tham gia, bao gồm kịch bản thực hành và bảng đánh giá SUS.
+```
 
 **3. Verdict:**
 
