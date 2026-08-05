@@ -3,6 +3,8 @@
 - Student name: Dương Gia Huy
 - Student ID: 23127052
 
+---
+
 ## AI-generated Artifact
 
 Em đã sử dụng AI cho những task sau đây:
@@ -319,7 +321,7 @@ AI đã sinh riêng file Usability_Testing_Scenario.md với định dạng rõ 
 
 ### Artifact 13:
 **1. Prompt + Tool**
-- **Tool:** Gemini 3.5 Flash (Antigravity)
+- **Tool:** Gemini 3.1 Pro (Antigravity)
 - **Timestamp:** 10:00 05/08/2026
 - **Prompt:**
 ```text
@@ -349,16 +351,69 @@ AI đã đọc file SKILL định hướng và tạo thành công khung sườn 
 
 **5. Student Fix:** Em đã xóa bỏ những thông tin không có thực đó và chủ động thêm vào mục "Nhật ký quan sát chi tiết từng phiên", bổ sung một bảng để tính điểm SUS chi tiết cho từng người tham gia và tạo thêm một đề mục để đưa link Google Drive chứa video minh chứng vào.
 
+### Artifact 14:
+**1. Prompt + Tool**
+- **Tool:** Gemini 3.5 Flash (Antigravity)
+- **Timestamp:** 17:57 05/08/2026
+- **Prompt:**
+```text
+Bạn hãy làm giúp tôi khung sườn file README.md, dựa vào các file tôi đã làm sẵn trong thư mục project, sau đó tôi sẽ tự điều chỉnh lại:
+File README bao gồm self-assessment table (below) and a test summary: scenario 
+chosen; screens tested; checklist items designed / executed / passed / failed; number of 
+bugs; number of user-testing participants (5) and usability issues by severity; 
+compatibility cells covered; demo videos.
 
+Bảng Self-Assessment bao gồm:
+1a: Task 1A — Shared checklist (> 40 items, IA-01...IA-04) + reference sources + AI prompts (group)
+1b: Task 1B — Checklist execution on ≥ 3 screens + bug reports (individual)
+2: Task 2 — User testing with 5 real users (scenario + 5 sessions + analysis → Usability Report)
+3: Task 3 — Cross-Browser / Cross-Platform matrix (3 OS × 5 browsers × 3 device classes)
+4: Bug & Usability Findings submission (Google Form) + aggregated log
+5: Agent Skills
+
+Ràng buộc:
+Không được tự sinh dữ liệu giả, dữ liệu phải lấy từ trong file trong thư mục.
+```
+
+**2. AI Output:**
+```text
+AI đã phân tích cấu trúc thư mục, thống kê các bảng checklist, log lỗi, báo cáo kiểm thử tính khả dụng và tạo file README.md hoàn thiện chứa bảng tự đánh giá đầy đủ cùng tóm tắt các số liệu kiểm thử thực tế.
+```
+
+**3. Verdict:** INCOMPLETE
+
+**4. Reasoning:** AI đã tự động tổng hợp số liệu kiểm thử từ các file báo cáo và tạo file README.md với đầy đủ cấu trúc cần thiết. Tuy nhiên, bảng tự đánh giá vẫn cần được tinh chỉnh lại cho chính xác với trạng thái nộp bài của sinh viên, và nội dung sinh ra chưa có mục video minh chứng cho Agent Skill.
+
+**5. Student Fix:** Em đã chỉnh sửa lại bảng Self-Assessment, bổ sung phần "2.7 Video Demo Agent Skill" để minh chứng quá trình chạy tool của Agent và tự căn chỉnh lại format cho gọn gàng hơn.
+
+### Artifact 15:
+**1. Prompt + Tool**
+- **Tool:** Gemini 3.5 Flash (Antigravity)
+- **Timestamp:** 18:45 05/08/2026
+- **Prompt:**
+```text
+Bạn hãy chuyển lại hết toàn bộ link ảnh trong [Main_Report.md](file;file:///d:/DaiHoc/KiemThuPM/HW03/Main_Report.md), [Bug_Usability_Findings_Log.md](file;file:///d:/DaiHoc/KiemThuPM/HW03/Bug_Usability_Findings_Log.md), [Usability_Report.md](file;file:///d%3A/DaiHoc/KiemThuPM/HW03/User_Testing_Evidence/Usability_Report.md) thành dạng kiểu, nhấn vào "Xem ảnh" thì đi ra mở ra bức ảnh đó, chứ không chèn trực tiếp vào bảng nữa.
+```
+
+**2. AI Output:**
+```text
+AI đã viết và chạy thành công script Python để chuyển đổi hàng loạt 88 liên kết ảnh dạng hiển thị trực tiếp sang dạng text link [Xem ảnh] trên cả 3 file báo cáo theo đúng yêu cầu.
+```
+
+**3. Verdict:** VALID
+
+**4. Reasoning:** AI đã thực hiện chính xác việc chuyển đổi hàng loạt liên kết ảnh sang dạng text link [Xem ảnh] thông qua script Python tự động mà không làm hỏng bố cục của các phần khác trong báo cáo.
+
+**5. Student Fix:** Không cần chỉnh sửa.
 
 ## Đánh giá & Kết luận
 
 ### Đánh giá độ chính xác của AI
-* **VALID: 7/12 (58.3%)**
-  *(Artifact 1, Artifact 3, Artifact 4, Artifact 5, Artifact 6, Artifact 8, Artifact 10).*
-* **INCOMPLETE: 4/12 (33.3%)**
-  *(Artifact 2, Artifact 9, Artifact 11, Artifact 12).*
-* **INVALID: 1/12 (8.3%)**
+* **VALID: 8/15 (53.3%)**
+  *(Artifact 1, Artifact 3, Artifact 4, Artifact 5, Artifact 6, Artifact 8, Artifact 10, Artifact 15).*
+* **INCOMPLETE: 6/15 (40.0%)**
+  *(Artifact 2, Artifact 9, Artifact 11, Artifact 12, Artifact 13, Artifact 14).*
+* **INVALID: 1/15 (6.7%)**
   *(Artifact 7).*
 
 ### Kết luận
