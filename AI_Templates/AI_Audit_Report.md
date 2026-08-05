@@ -293,9 +293,9 @@ AI đã tạo khung sườn cho Task 2 (Usability Testing) và chèn vào Main_R
 
 **3. Verdict:** INCOMPLETE
 
-**4. Reasoning:** AI đã tạo đúng khung sườn cho Task 2 bên trong `Main_Report.md` bao gồm: Kịch bản thử nghiệm mục tiêu, 10 câu hỏi SUS tiếng Việt và các bảng số liệu, thông tin và chỉ số khác trong quá trình làm của người tham gia. Tuy nhiên AI đã gộp lại phần lỗi và đề xuất chỉ trong mục 3.3.
+**4. Reasoning:** AI đã tạo đúng khung sườn cho Task 2 bên trong `Main_Report.md` bao gồm: Kịch bản thử nghiệm mục tiêu, 10 câu hỏi SUS tiếng Việt và các bảng số liệu, thông tin và chỉ số khác trong quá trình làm của người tham gia. Tuy nhiên AI đã gộp lại phần lỗi và đề xuất chỉ trong mục 3.3 và phần khung sườn được sinh ra ở Artifact 11 cũng có vấn đề, không đủ bao hàm các phần nội dung trong HW03 - điều này là do SKILL.md do em làm chưa bao hàm hết.
 
-**5. Student Fix:** Em đã chủ động chia mục 3.3 thành hai phần riêng biệt là `Phân tích lỗi & Vấn đề` và `Đề xuất cải thiện ưu tiên` để nội dung có thể được trình bày rành mạch và rõ ràng hơn.
+**5. Student Fix:** Em đã quyết định tạo lại và chỉnh sửa hoàn toàn phần khung sườn của Task 2 ở Artifact 13 sao cho bao hàm và chi tiết nhất.
 
 ### Artifact 12: 
 **1. Prompt + Tool**
@@ -316,6 +316,40 @@ AI đã sinh riêng file Usability_Testing_Scenario.md với định dạng rõ 
 **4. Reasoning:** AI đã tạo file `Usability_Testing_Scenario.md` với định dạng và văn phong lịch sự, rõ ràng để hướng dẫn kiểm thử (E2E Scenario). Tuy vậy nhưng việc để cả bảng đánh giá vào file .md khiến cho việc điền điểm số khá khó khăn (nhất là với người không chuyên về CNTT - không có Visual Studio Code) cũng như scenario của AI không hề có phần nào mô tả về các trạng thái có thể có của 1 user - điều này khiến cho người tham gia khó nắm bắt nhanh được hệ thống có thể sử dụng ra sao.
 
 **5. Student Fix:** Em đã bổ sung thêm vào scenario testing một phần lưu ý nhỏ để người tham gia hiểu rõ hơn về trạng thái và role có thể có của 1 tài khoản. Đồng thời,  em đã tạo một Form Google Docs cho 10 câu hỏi SUS giúp người tham gia dễ dàng chấm điểm, thay thế cho bảng tự đánh giá trong file .md.
+
+### Artifact 13:
+**1. Prompt + Tool**
+- **Tool:** Gemini 3.5 Flash (Antigravity)
+- **Timestamp:** 10:00 05/08/2026
+- **Prompt:**
+```text
+Từ nội dung sau, bạn hãy gen ra khung sườn cho Usability_Report.md
+Vì hình như bản đang generate cho phần Task 2 trước đó không hợp lý lắm.
+
+Nội dung:
+Define what you will measure. task success (completed / partial / failed), time 
+on task, error / hesitation count, and a post-task SUS or UEQ-S score.
+Score the SUS / UEQ-S across the five participants and tabulate the task metrics (success 
+rate, mean time, errors).
+Analyse the usability of the related web pages: group similar pain points, separate isolated 
+bugs from systemic design issues, and rank findings by severity (0–4).
+Produce a Usability Report with: the scenario, the participant table (5 people, 
+masked), the metrics table, the ranked findings with a screenshot each, and a prioritised list 
+of concrete recommendations. Log genuine bugs through the channel in §7.
+```
+
+**2. AI Output:**
+```text
+AI đã đọc file SKILL định hướng và tạo thành công khung sườn báo cáo Usability độc lập tại User_Testing_Evidence/Usability_Report.md, bao gồm đầy đủ các bảng dữ liệu, kịch bản, câu hỏi SUS và danh sách đề xuất.
+```
+
+**3. Verdict:** INCOMPLETE
+
+**4. Reasoning:** Khung sườn mà AI tạo ra khá đầy đủ và rõ ràng. Tuy nhiên, AI lại tự động điền sẵn một số dữ liệu giả không có thực (hallucinate) vào các bảng báo cáo, đồng thời khung sườn còn thiếu một vài mục để trình bày dữ liệu chi tiết.
+
+**5. Student Fix:** Em đã xóa bỏ những thông tin không có thực đó và chủ động thêm vào mục "Nhật ký quan sát chi tiết từng phiên", bổ sung một bảng để tính điểm SUS chi tiết cho từng người tham gia và tạo thêm một đề mục để đưa link Google Drive chứa video minh chứng vào.
+
+
 
 ## Đánh giá & Kết luận
 
