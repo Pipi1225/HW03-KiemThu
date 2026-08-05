@@ -79,10 +79,10 @@
 | IA-01-01 | General UI | Hệ thống lưới và khoảng cách (Grid & Spacing) căn lề nhất quán trên toàn màn hình. | Nielsen #4: Consistency | Pass | |
 | IA-01-02 | General UI | Font chữ (typography) nhất quán về kích thước, độ dày (bold/regular) và phân cấp tiêu đề. | Nielsen #4: Consistency | Pass | |
 | IA-01-03 | General UI | Màu sắc của các nút hành động (Primary, Secondary) và trạng thái nhất quán. | Norman: Signifiers | Pass | |
-| IA-01-04 | General UI | Đa ngôn ngữ (EN/VI) hoạt động đầy đủ, không bị dịch thiếu hoặc chồng lấp chữ. | Nielsen #4: Consistency | Fail | Lỗi i18n: Tại ô nhập liệu phân trang 'Đến trang', khi thiết lập giao diện tiếng Việt và nhập giá trị không hợp lệ (ví dụ: nhập số trang vượt quá giới hạn như 11/10, hoặc số âm như -1), trình duyệt hiển thị thông báo lỗi bằng tiếng Anh ('Value must be less than or equal to...' / 'Value must be greater than or equal to...') thay vì tiếng Việt. |
+| IA-01-04 | General UI | Đa ngôn ngữ (EN/VI) hoạt động đầy đủ, không bị dịch thiếu hoặc chồng lấp chữ. | Nielsen #4: Consistency | Fail | Lỗi i18n: Tại ô nhập liệu phân trang 'Đến trang', khi thiết lập giao diện tiếng Việt và nhập giá trị không hợp lệ (ví dụ: nhập số trang vượt quá giới hạn như 11/10, hoặc số âm như -1), trình duyệt hiển thị thông báo lỗi bằng tiếng Anh ('Value must be less than or equal to...' / 'Value must be greater than or equal to...') thay vì tiếng Việt. [Xem ảnh](images/bug-defect/Screen-C1-IA-01-04a.jpg) [Xem ảnh](images/bug-defect/Screen-C1-IA-01-04b.jpg) |
 | IA-01-05 | General UI | Trạng thái rỗng (Empty state) được hiển thị rõ ràng khi không có sự kiện/dữ liệu nào. | Nielsen #1: Visibility | Pass | |
 | IA-01-06 | General UI | Trạng thái đang tải (Loading state/skeleton) hiển thị khi kéo dữ liệu chậm. | Nielsen #1: Visibility | Pass | |
-| IA-01-07 | General UI | Trang web tương thích tốt và tự động co giãn (Responsive) trên màn hình. | Nielsen #4: Consistency | Fail | Lỗi responsive: Sidebar không tự động thu gọn lại khi thu nhỏ màn hình trình duyệt, dẫn đến các cột thông tin của bảng Users list bị che khuất và không thể xem được đầy đủ dữ liệu (chỉ hiển thị đủ khi Admin chủ động click thu gọn sidebar thủ công). |
+| IA-01-07 | General UI | Trang web tương thích tốt và tự động co giãn (Responsive) trên màn hình. | Nielsen #4: Consistency | Fail | Lỗi responsive: Sidebar không tự động thu gọn lại khi thu nhỏ màn hình trình duyệt, dẫn đến các cột thông tin của bảng Users list bị che khuất và không thể xem được đầy đủ dữ liệu (chỉ hiển thị đủ khi Admin chủ động click thu gọn sidebar thủ công). [Xem ảnh](images/bug-defect/Screen-C1-IA-01-07.jpg) |
 | IA-01-08 | General UI | Các hình ảnh (Thumbnail/Banner) không bị méo tỉ lệ hiển thị (tỷ lệ 4:3 và 24:9) trên các kích thước màn hình khác nhau. | Shneiderman: Aesthetics | N/A | |
 | IA-01-09 | General UI | Các icon được căn chỉnh đúng tâm so với nhãn text bên cạnh. | Shneiderman: Aesthetics | Pass | |
 | IA-01-10 | General UI | Độ tương phản màu sắc giữa văn bản và nền đủ rõ ràng (Accessibility WCAG). | Nielsen #4: Consistency | Pass | |
@@ -123,7 +123,7 @@
 | IA-04-06 | Feedback | Trạng thái hiển thị màu sắc tương thích với ngữ nghĩa (Ví dụ: APPROVED màu xanh lá, REJECTED màu đỏ). | Nielsen #2: Match System | Pass | |
 | IA-04-07 | Feedback | Chấm đỏ thông báo (Notification dot) hiển thị động ngay khi có thay đổi trạng thái đăng ký. | Nielsen #1: Visibility | N/A | |
 | IA-04-08 | Feedback | Hộp thoại chi tiết ảnh (Lightbox) mở rộng mượt mà khi click vào ảnh đính kèm. | Nielsen #7: Flexibility | N/A | |
-| IA-04-09 | Feedback | Cập nhật dữ liệu thời gian thực (Real-time update) mà không cần người dùng reload trang. | Norman: Feedback | Fail | Hệ thống không tự động cập nhật danh sách người dùng theo thời gian thực. Khi chỉnh sửa tên user ở tab Admin 1 (ví dụ đổi từ "def abc" thành "B A"), tab Admin 2 bên cạnh vẫn hiển thị tên cũ là "def abc" cho đến khi reload trang thủ công. |
+| IA-04-09 | Feedback | Cập nhật dữ liệu thời gian thực (Real-time update) mà không cần người dùng reload trang. | Norman: Feedback | Fail | Hệ thống không tự động cập nhật danh sách người dùng theo thời gian thực. Khi chỉnh sửa tên user ở tab Admin 1 (ví dụ đổi từ "def abc" thành "B A"), tab Admin 2 bên cạnh vẫn hiển thị tên cũ là "def abc" cho đến khi reload trang thủ công. [Xem ảnh](images/bug-defect/Screen-C1-IA-04-09a.jpg) [Xem ảnh](images/bug-defect/Screen-C1-IA-04-09b.jpg) |
 | IA-04-10 | Feedback | Hiển thị thông báo rõ ràng khi mất kết nối mạng Internet. | Nielsen #1: Visibility | N/A | |
 | IA-04-11 | Feedback | Hệ thống vô hiệu hóa nút gửi hoặc ngăn chặn gửi dữ liệu trùng lặp khi người dùng click đúp nút Submit. | Nielsen #5: Error Prev. | N/A | |
 | IA-04-12 | Feedback | Mã QR/Barcode trên vé hiển thị rõ nét (không bị mờ), có kích thước tối thiểu đảm bảo quét được bằng ứng dụng camera thông thường. | Nielsen #1: Visibility | N/A | |
@@ -140,24 +140,24 @@
 | IA-01-01 | General UI | Hệ thống lưới và khoảng cách (Grid & Spacing) căn lề nhất quán trên toàn màn hình. | Nielsen #4: Consistency | Pass | |
 | IA-01-02 | General UI | Font chữ (typography) nhất quán về kích thước, độ dày (bold/regular) và phân cấp tiêu đề. | Nielsen #4: Consistency | Pass | |
 | IA-01-03 | General UI | Màu sắc của các nút hành động (Primary, Secondary) và trạng thái nhất quán. | Norman: Signifiers | Pass | |
-| IA-01-04 | General UI | Đa ngôn ngữ (EN/VI) hoạt động đầy đủ, không bị dịch thiếu hoặc chồng lấp chữ. | Nielsen #4: Consistency | Fail | Lỗi i18n: Khi nhập email không đúng định dạng trong form "Tạo người dùng mới", thông báo lỗi của trình duyệt hiển thị bằng tiếng Anh ("Please include an '@' in the email address..."), trong khi các trường lỗi khác và toàn bộ giao diện đang hiển thị tiếng Việt bình thường. |
+| IA-01-04 | General UI | Đa ngôn ngữ (EN/VI) hoạt động đầy đủ, không bị dịch thiếu hoặc chồng lấp chữ. | Nielsen #4: Consistency | Fail | Lỗi i18n: Khi nhập email không đúng định dạng trong form "Tạo người dùng mới", thông báo lỗi của trình duyệt hiển thị bằng tiếng Anh ("Please include an '@' in the email address..."), trong khi các trường lỗi khác và toàn bộ giao diện đang hiển thị tiếng Việt bình thường. [Xem ảnh](images/bug-defect/Screen-C2-IA-01-04.jpg) |
 | IA-01-05 | General UI | Trạng thái rỗng (Empty state) được hiển thị rõ ràng khi không có sự kiện/dữ liệu nào. | Nielsen #1: Visibility | N/A | |
 | IA-01-06 | General UI | Trạng thái đang tải (Loading state/skeleton) hiển thị khi kéo dữ liệu chậm. | Nielsen #1: Visibility | N/A | |
-| IA-01-07 | General UI | Trang web tương thích tốt và tự động co giãn (Responsive) trên màn hình. | Nielsen #4: Consistency | Fail | Lỗi responsive: Khi hiển thị trên các màn hình nhỏ (như thiết bị di động), form Create User bị thu nhỏ kích thước (zoom out) quá mức, dẫn đến chữ và các trường nhập liệu cực kỳ nhỏ, rất khó để Admin nhìn rõ và nhấp chọn chính xác. |
+| IA-01-07 | General UI | Trang web tương thích tốt và tự động co giãn (Responsive) trên màn hình. | Nielsen #4: Consistency | Fail | Lỗi responsive: Khi hiển thị trên các màn hình nhỏ (như thiết bị di động), form Create User bị thu nhỏ kích thước (zoom out) quá mức, dẫn đến chữ và các trường nhập liệu cực kỳ nhỏ, rất khó để Admin nhìn rõ và nhấp chọn chính xác. [Xem ảnh](images/bug-defect/Screen-C2-IA-01-07.jpg) |
 | IA-01-08 | General UI | Các hình ảnh (Thumbnail/Banner) không bị méo tỉ lệ hiển thị (tỷ lệ 4:3 và 24:9) trên các kích thước màn hình khác nhau. | Shneiderman: Aesthetics | N/A | |
 | IA-01-09 | General UI | Các icon được căn chỉnh đúng tâm so với nhãn text bên cạnh. | Shneiderman: Aesthetics | Pass | |
 | IA-01-10 | General UI | Độ tương phản màu sắc giữa văn bản và nền đủ rõ ràng (Accessibility WCAG). | Nielsen #4: Consistency | Pass | |
 | IA-01-11 | General UI | Các liên kết ngoài (External links) mở ở tab mới, liên kết nội bộ (Internal links) mở ở tab hiện tại. | Nielsen #3: User Control | N/A | |
 | IA-01-12 | General UI | Ảnh Thumbnail (4:3) và Banner (24:9) không bị cắt xén mất nội dung quan trọng. | Nielsen #4: Consistency | N/A | |
 | **IA-02** | **Forms** | **IA-02: Forms (Labels, Validation, Errors, Required Fields, Rich Text)** | | | |
-| IA-02-01 | Forms | Các trường bắt buộc nhập (Required fields) được đánh dấu ký hiệu trực quan (ví dụ dấu `*`). | Norman: Constraints | Fail | Form "Tạo người dùng mới" không hiển thị dấu hoa thị màu đỏ `*` cạnh các trường bắt buộc, nhưng khi nhấn "Create User" hệ thống lại báo lỗi bắt buộc nhập (ví dụ: "Last name is required", "First name is required", "Role is required"). |
-| IA-02-02 | Forms | Nhãn (Labels) của trường nhập liệu luôn hiển thị rõ ràng và đi sát với ô nhập liệu. | Nielsen #6: Recognition | Fail | Lỗi gợi ý (placeholder): Trong form Create User, ô nhập liệu trường First Name hiển thị placeholder gợi ý là "Last name", còn trường Last name hiển thị placeholder gợi ý là "First name" (bị tráo đổi nội dung placeholder ngược nhau). |
-| IA-02-03 | Forms | Validation thời gian thực báo lỗi đỏ trực quan ngay dưới trường nhập liệu bị lỗi. | Nielsen #5: Error Prev. | Fail | Không có validation thời gian thực cho trường email (ví dụ nhập "a" nhưng không báo lỗi gì trước khi submit). Chỉ sau khi nhấn "Create User" thì lỗi mới được hiển thị. |
-| IA-02-04 | Forms | Thông báo lỗi cụ thể, hướng dẫn cách khắc phục thay vì báo lỗi chung chung. | Nielsen #10: Help & Error | Fail | Lỗi nội dung thông báo: Khi người dùng nhập email thiếu tên miền (ví dụ: "abc@abccom"), hệ thống báo lỗi chung chung là "Invalid email address" thay vì chỉ dẫn rõ ràng là người dùng đang thiếu đuôi tên miền (domain extension). |
+| IA-02-01 | Forms | Các trường bắt buộc nhập (Required fields) được đánh dấu ký hiệu trực quan (ví dụ dấu `*`). | Norman: Constraints | Fail | Form "Tạo người dùng mới" không hiển thị dấu hoa thị màu đỏ `*` cạnh các trường bắt buộc, nhưng khi nhấn "Create User" hệ thống lại báo lỗi bắt buộc nhập (ví dụ: "Last name is required", "First name is required", "Role is required"). [Xem ảnh](images/bug-defect/Screen-C2-IA-02-01.jpg) |
+| IA-02-02 | Forms | Nhãn (Labels) của trường nhập liệu luôn hiển thị rõ ràng và đi sát với ô nhập liệu. | Nielsen #6: Recognition | Fail | Lỗi gợi ý (placeholder): Trong form Create User, ô nhập liệu trường First Name hiển thị placeholder gợi ý là "Last name", còn trường Last name hiển thị placeholder gợi ý là "First name" (bị tráo đổi nội dung placeholder ngược nhau). [Xem ảnh](images/bug-defect/Screen-C2-IA-02-02.jpg) |
+| IA-02-03 | Forms | Validation thời gian thực báo lỗi đỏ trực quan ngay dưới trường nhập liệu bị lỗi. | Nielsen #5: Error Prev. | Fail | Không có validation thời gian thực cho trường email (ví dụ nhập "a" nhưng không báo lỗi gì trước khi submit). Chỉ sau khi nhấn "Create User" thì lỗi mới được hiển thị. [Xem ảnh](images/bug-defect/Screen-C2-IA-02-03.jpg) |
+| IA-02-04 | Forms | Thông báo lỗi cụ thể, hướng dẫn cách khắc phục thay vì báo lỗi chung chung. | Nielsen #10: Help & Error | Fail | Lỗi nội dung thông báo: Khi người dùng nhập email thiếu tên miền (ví dụ: "abc@abccom"), hệ thống báo lỗi chung chung là "Invalid email address" thay vì chỉ dẫn rõ ràng là người dùng đang thiếu đuôi tên miền (domain extension). [Xem ảnh](images/bug-defect/Screen-C2-IA-02-04.jpg) |
 | IA-02-05 | Forms | Định dạng tải lên (Upload file/image) kiểm tra đúng định dạng và dung lượng tối đa. | Norman: Constraints | N/A | |
 | IA-02-06 | Forms | Trình soạn thảo Rich Text hiển thị đầy đủ thanh công cụ và hoạt động mượt mà. | Nielsen #7: Flexibility | N/A | |
 | IA-02-07 | Forms | Người dùng có thể nhấn `Tab` để di chuyển tuần tự qua các ô nhập liệu trong form. | Nielsen #7: Flexibility | Pass | |
-| IA-02-08 | Forms | Các nút Submit/Save bị vô hiệu hóa (disabled) khi form chưa điền đủ thông tin hợp lệ. | Nielsen #5: Error Prev. | Fail | Nút "Create User" vẫn có thể nhấn được (không bị disabled hay chuyển màu xám) ngay cả khi form chưa hợp lệ (ví dụ bỏ trống email, nhập số điện thoại sai định dạng là "a"). |
+| IA-02-08 | Forms | Các nút Submit/Save bị vô hiệu hóa (disabled) khi form chưa điền đủ thông tin hợp lệ. | Nielsen #5: Error Prev. | Fail | Nút "Create User" vẫn có thể nhấn được (không bị disabled hay chuyển màu xám) ngay cả khi form chưa hợp lệ (ví dụ bỏ trống email, nhập số điện thoại sai định dạng là "a"). [Xem ảnh](images/bug-defect/Screen-C2-IA-02-08.jpg) |
 | IA-02-09 | Forms | Định dạng ngày giờ hiển thị theo chuẩn cục bộ dễ đọc đối với người dùng Việt Nam. | Nielsen #2: Match System | N/A | |
 | IA-02-10 | Forms | Nút xóa nhanh (clear button) hoặc reset form hoạt động chính xác. | Nielsen #3: User Control | N/A | |
 | IA-02-11 | Forms | Trình duyệt hỗ trợ tính năng tự động điền (autofill) cho các trường thông tin cơ bản. | Nielsen #7: Flexibility | N/A | |
@@ -176,7 +176,7 @@
 | IA-03-11 | Navigation | Đường dẫn URL trên thanh địa chỉ thay đổi tương ứng khi chuyển đổi qua lại giữa các tab hoặc bộ lọc. | Nielsen #4: Consistency | N/A | |
 | IA-03-12 | Navigation | Giao diện kéo thả (Reorder) hiển thị biểu tượng tay cầm (drag handle) rõ ràng để gợi ý khả năng tương tác. | Norman: Signifiers | N/A | |
 | **IA-04** | **Feedback** | **IA-04: Feedback & State (Toasts, Badges, Confirmations, Progress Bars, Status Colors)** | | | |
-| IA-04-01 | Feedback | Thông báo nổi (Toasts) xuất hiện ngay sau khi thực hiện hành động và tự động tắt sau 3-5s. | Norman: Feedback | Fail | Không hiển thị Toast thông báo sau khi tạo người dùng thành công để xác nhận hành động đã hoàn tất. |
+| IA-04-01 | Feedback | Thông báo nổi (Toasts) xuất hiện ngay sau khi thực hiện hành động và tự động tắt sau 3-5s. | Norman: Feedback | Fail | Không hiển thị Toast thông báo sau khi tạo người dùng thành công để xác nhận hành động đã hoàn tất. [Xem ảnh](images/bug-defect/Screen-C2-IA-04-01a.jpg) [Xem ảnh](images/bug-defect/Screen-C2-IA-04-01b.jpg) |
 | IA-04-02 | Feedback | Toasts có màu sắc phân biệt rõ ràng: Xanh (Thành công), Đỏ (Lỗi), Vàng (Cảnh báo). | Nielsen #8: Aesthetic | N/A | |
 | IA-04-03 | Feedback | Hộp thoại xác nhận (Confirmation dialog) xuất hiện trước các hành động hủy/xóa quan trọng. | Nielsen #5: Error Prev. | N/A | |
 | IA-04-04 | Feedback | Huy hiệu (Badges) hiển thị chính xác số lượng thông báo; trạng thái vé thay đổi tương ứng khi được phê duyệt/hủy. | Nielsen #1: Visibility | N/A | |
@@ -185,7 +185,7 @@
 | IA-04-07 | Feedback | Chấm đỏ thông báo (Notification dot) hiển thị động ngay khi có thay đổi trạng thái đăng ký. | Nielsen #1: Visibility | N/A | |
 | IA-04-08 | Feedback | Hộp thoại chi tiết ảnh (Lightbox) mở rộng mượt mà khi click vào ảnh đính kèm. | Nielsen #7: Flexibility | N/A | |
 | IA-04-09 | Feedback | Cập nhật dữ liệu thời gian thực (Real-time update) mà không cần người dùng reload trang. | Norman: Feedback | N/A | |
-| IA-04-10 | Feedback | Hiển thị thông báo rõ ràng khi mất kết nối mạng Internet. | Nielsen #1: Visibility | Fail | Khi mất kết nối mạng đột ngột và nhấn "Create User", hệ thống hiển thị thông báo lỗi thô sơ và tối nghĩa: "Failed to fetch" trực tiếp trên form thay vì đưa ra cảnh báo mất kết nối thân thiện. |
+| IA-04-10 | Feedback | Hiển thị thông báo rõ ràng khi mất kết nối mạng Internet. | Nielsen #1: Visibility | Fail | Khi mất kết nối mạng đột ngột và nhấn "Create User", hệ thống hiển thị thông báo lỗi thô sơ và tối nghĩa: "Failed to fetch" trực tiếp trên form thay vì đưa ra cảnh báo mất kết nối thân thiện. [Xem ảnh](images/bug-defect/Screen-C2-IA-04-10.jpg) |
 | IA-04-11 | Feedback | Hệ thống vô hiệu hóa nút gửi hoặc ngăn chặn gửi dữ liệu trùng lặp khi người dùng click đúp nút Submit. | Nielsen #5: Error Prev. | Pass | |
 | IA-04-12 | Feedback | Mã QR/Barcode trên vé hiển thị rõ nét (không bị mờ), có kích thước tối thiểu đảm bảo quét được bằng ứng dụng camera thông thường. | Nielsen #1: Visibility | N/A | |
 | IA-04-13 | Feedback | Ô nhập liệu (text box) hiển thị hiệu ứng viền/nổi bật trực quan (focus state) khi nhấp chuột vào để người dùng nhận biết rõ ràng đang thao tác/nhập liệu. | Norman: Feedback | Pass | |
@@ -201,7 +201,7 @@
 | IA-01-01 | General UI | Hệ thống lưới và khoảng cách (Grid & Spacing) căn lề nhất quán trên toàn màn hình. | Nielsen #4: Consistency | Pass | |
 | IA-01-02 | General UI | Font chữ (typography) nhất quán về kích thước, độ dày (bold/regular) và phân cấp tiêu đề. | Nielsen #4: Consistency | Pass | |
 | IA-01-03 | General UI | Màu sắc của các nút hành động (Primary, Secondary) và trạng thái nhất quán. | Norman: Signifiers | Pass | |
-| IA-01-04 | General UI | Đa ngôn ngữ (EN/VI) hoạt động đầy đủ, không bị dịch thiếu hoặc chồng lấp chữ. | Nielsen #4: Consistency | Fail | Lỗi i18n: Nội dung và tiêu đề các cột trong file Excel xuất ra hiển thị cố định bằng tiếng Anh (Last Name, First Name, Card Code...), không dịch theo ngôn ngữ Việt Nam của hệ thống. |
+| IA-01-04 | General UI | Đa ngôn ngữ (EN/VI) hoạt động đầy đủ, không bị dịch thiếu hoặc chồng lấp chữ. | Nielsen #4: Consistency | Fail | Lỗi i18n: Nội dung và tiêu đề các cột trong file Excel xuất ra hiển thị cố định bằng tiếng Anh (Last Name, First Name, Card Code...), không dịch theo ngôn ngữ Việt Nam của hệ thống. [Xem ảnh](images/bug-defect/Screen-C3-IA-01-04.jpg) |
 | IA-01-05 | General UI | Trạng thái rỗng (Empty state) được hiển thị rõ ràng khi không có sự kiện/dữ liệu nào. | Nielsen #1: Visibility | N/A | |
 | IA-01-06 | General UI | Trạng thái đang tải (Loading state/skeleton) hiển thị khi kéo dữ liệu chậm. | Nielsen #1: Visibility | N/A | |
 | IA-01-07 | General UI | Trang web tương thích tốt và tự động co giãn (Responsive) trên màn hình. | Nielsen #4: Consistency | N/A | |
@@ -219,7 +219,7 @@
 | IA-02-06 | Forms | Trình soạn thảo Rich Text hiển thị đầy đủ thanh công cụ và hoạt động mượt mà. | Nielsen #7: Flexibility | N/A | |
 | IA-02-07 | Forms | Người dùng có thể nhấn `Tab` để di chuyển tuần tự qua các ô nhập liệu trong form. | Nielsen #7: Flexibility | N/A | |
 | IA-02-08 | Forms | Các nút Submit/Save bị vô hiệu hóa (disabled) khi form chưa điền đủ thông tin hợp lệ. | Nielsen #5: Error Prev. | N/A | |
-| IA-02-09 | Forms | Định dạng ngày giờ hiển thị theo chuẩn cục bộ dễ đọc đối với người dùng Việt Nam. | Nielsen #2: Match System | Fail | Lỗi định dạng: Dòng thông tin phụ 'Export date: 7/28/2026' hiển thị sai định dạng Việt Nam (m/d/yyyy), không nhất quán với cột dữ liệu 'Created At' vốn dùng dd/mm/yyyy. |
+| IA-02-09 | Forms | Định dạng ngày giờ hiển thị theo chuẩn cục bộ dễ đọc đối với người dùng Việt Nam. | Nielsen #2: Match System | Fail | Lỗi định dạng: Dòng thông tin phụ 'Export date: 7/28/2026' hiển thị sai định dạng Việt Nam (m/d/yyyy), không nhất quán với cột dữ liệu 'Created At' vốn dùng dd/mm/yyyy. [Xem ảnh](images/bug-defect/Screen-C3-IA-02-09.jpg) |
 | IA-02-10 | Forms | Nút xóa nhanh (clear button) hoặc reset form hoạt động chính xác. | Nielsen #3: User Control | N/A | |
 | IA-02-11 | Forms | Trình duyệt hỗ trợ tính năng tự động điền (autofill) cho các trường thông tin cơ bản. | Nielsen #7: Flexibility | N/A | |
 | IA-02-12 | Forms | Ô nhập mật khẩu hỗ trợ tính năng toggle ẩn/hiện mật khẩu trực quan bằng biểu tượng con mắt. | Nielsen #7: Flexibility | N/A | |
@@ -237,7 +237,7 @@
 | IA-03-11 | Navigation | Đường dẫn URL trên thanh địa chỉ thay đổi tương ứng khi chuyển đổi qua lại giữa các tab hoặc bộ lọc. | Nielsen #4: Consistency | N/A | |
 | IA-03-12 | Navigation | Giao diện kéo thả (Reorder) hiển thị biểu tượng tay cầm (drag handle) rõ ràng để gợi ý khả năng tương tác. | Norman: Signifiers | N/A | |
 | **IA-04** | **Feedback** | **IA-04: Feedback & State (Toasts, Badges, Confirmations, Progress Bars, Status Colors)** | | | |
-| IA-04-01 | Feedback | Thông báo nổi (Toasts) xuất hiện ngay sau khi thực hiện hành động và tự động tắt sau 3-5s. | Norman: Feedback | Fail | Lỗi Toast: Giao diện hệ thống không hiển thị bất kỳ thông báo Toast success nào để xác nhận việc xuất dữ liệu và tải file Excel hoàn tất. |
+| IA-04-01 | Feedback | Thông báo nổi (Toasts) xuất hiện ngay sau khi thực hiện hành động và tự động tắt sau 3-5s. | Norman: Feedback | Fail | Lỗi Toast: Giao diện hệ thống không hiển thị bất kỳ thông báo Toast success nào để xác nhận việc xuất dữ liệu và tải file Excel hoàn tất. [Xem ảnh](images/bug-defect/Screen-C3-IA-04-01.jpg) |
 | IA-04-02 | Feedback | Toasts có màu sắc phân biệt rõ ràng: Xanh (Thành công), Đỏ (Lỗi), Vàng (Cảnh báo). | Nielsen #8: Aesthetic | N/A | |
 | IA-04-03 | Feedback | Hộp thoại xác nhận (Confirmation dialog) xuất hiện trước các hành động hủy/xóa quan trọng. | Nielsen #5: Error Prev. | N/A | |
 | IA-04-04 | Feedback | Huy hiệu (Badges) hiển thị chính xác số lượng thông báo; trạng thái vé thay đổi tương ứng khi được phê duyệt/hủy. | Nielsen #1: Visibility | N/A | |
@@ -246,7 +246,7 @@
 | IA-04-07 | Feedback | Chấm đỏ thông báo (Notification dot) hiển thị động ngay khi có thay đổi trạng thái đăng ký. | Nielsen #1: Visibility | N/A | |
 | IA-04-08 | Feedback | Hộp thoại chi tiết ảnh (Lightbox) mở rộng mượt mà khi click vào ảnh đính kèm. | Nielsen #7: Flexibility | N/A | |
 | IA-04-09 | Feedback | Cập nhật dữ liệu thời gian thực (Real-time update) mà không cần người dùng reload trang. | Norman: Feedback | Pass | |
-| IA-04-10 | Feedback | Hiển thị thông báo rõ ràng khi mất kết nối mạng Internet. | Nielsen #1: Visibility | Fail | Lỗi ngoại tuyến: Khi nhấn nút 'Export' lúc mất kết nối mạng, hệ thống không đưa ra bất cứ phản hồi hay thông điệp cảnh báo nào (im lặng hoàn toàn). |
+| IA-04-10 | Feedback | Hiển thị thông báo rõ ràng khi mất kết nối mạng Internet. | Nielsen #1: Visibility | Fail | Lỗi ngoại tuyến: Khi nhấn nút 'Export' lúc mất kết nối mạng, hệ thống không đưa ra bất cứ phản hồi hay thông điệp cảnh báo nào (im lặng hoàn toàn). [Xem ảnh](images/bug-defect/Screen-C3-IA-04-10.jpg) |
 | IA-04-11 | Feedback | Hệ thống vô hiệu hóa nút gửi hoặc ngăn chặn gửi dữ liệu trùng lặp khi người dùng click đúp nút Submit. | Nielsen #5: Error Prev. | N/A | |
 | IA-04-12 | Feedback | Mã QR/Barcode trên vé hiển thị rõ nét (không bị mờ), có kích thước tối thiểu đảm bảo quét được bằng ứng dụng camera thông thường. | Nielsen #1: Visibility | N/A | |
 | IA-04-13 | Feedback | Ô nhập liệu (text box) hiển thị hiệu ứng viền/nổi bật trực quan (focus state) khi nhấp chuột vào để người dùng nhận biết rõ ràng đang thao tác/nhập liệu. | Norman: Feedback | N/A | |
@@ -263,7 +263,7 @@
 | IA-01-04 | General UI | Đa ngôn ngữ (EN/VI) hoạt động đầy đủ, không bị dịch thiếu hoặc chồng lấp chữ. | Nielsen #4: Consistency | Pass | |
 | IA-01-05 | General UI | Trạng thái rỗng (Empty state) được hiển thị rõ ràng khi không có sự kiện/dữ liệu nào. | Nielsen #1: Visibility | Pass | |
 | IA-01-06 | General UI | Trạng thái đang tải (Loading state/skeleton) hiển thị khi kéo dữ liệu chậm. | Nielsen #1: Visibility | N/A | |
-| IA-01-07 | General UI | Trang web tương thích tốt và tự động co giãn (Responsive) trên màn hình. | Nielsen #4: Consistency | Fail | Lỗi responsive: Bảng danh sách bị vỡ cột trên màn hình di động nhỏ (iPhone SE). Hộp thoại xác nhận xóa cũng xuất hiện lệch ngoài khung nhìn hiển thị, phải cuộn trang thủ công để tìm. |
+| IA-01-07 | General UI | Trang web tương thích tốt và tự động co giãn (Responsive) trên màn hình. | Nielsen #4: Consistency | Fail | Lỗi responsive: Bảng danh sách bị vỡ cột trên màn hình di động nhỏ (iPhone SE). Hộp thoại xác nhận xóa cũng xuất hiện lệch ngoài khung nhìn hiển thị, phải cuộn trang thủ công để tìm. [Xem ảnh](images/bug-defect/Screen-C4-IA-01-07.jpg) |
 | IA-01-08 | General UI | Các hình ảnh (Thumbnail/Banner) không bị méo tỉ lệ hiển thị (tỷ lệ 4:3 và 24:9) trên các kích thước màn hình khác nhau. | Shneiderman: Aesthetics | N/A | |
 | IA-01-09 | General UI | Các icon được căn chỉnh đúng tâm so với nhãn text bên cạnh. | Shneiderman: Aesthetics | Pass | |
 | IA-01-10 | General UI | Độ tương phản màu sắc giữa văn bản và nền đủ rõ ràng (Accessibility WCAG). | Nielsen #4: Consistency | Pass | |
@@ -296,7 +296,7 @@
 | IA-03-11 | Navigation | Đường dẫn URL trên thanh địa chỉ thay đổi tương ứng khi chuyển đổi qua lại giữa các tab hoặc bộ lọc. | Nielsen #4: Consistency | N/A | |
 | IA-03-12 | Navigation | Giao diện kéo thả (Reorder) hiển thị biểu tượng tay cầm (drag handle) rõ ràng để gợi ý khả năng tương tác. | Norman: Signifiers | N/A | |
 | **IA-04** | **Feedback** | **IA-04: Feedback & State (Toasts, Badges, Confirmations, Progress Bars, Status Colors)** | | | |
-| IA-04-01 | Feedback | Thông báo nổi (Toasts) xuất hiện ngay sau khi thực hiện hành động và tự động tắt sau 3-5s. | Norman: Feedback | Fail | Lỗi phản hồi: Giao diện không hiển thị thông báo Toast success nào sau khi xóa người dùng thành công để xác nhận thao tác. |
+| IA-04-01 | Feedback | Thông báo nổi (Toasts) xuất hiện ngay sau khi thực hiện hành động và tự động tắt sau 3-5s. | Norman: Feedback | Fail | Lỗi phản hồi: Giao diện không hiển thị thông báo Toast success nào sau khi xóa người dùng thành công để xác nhận thao tác. [Xem ảnh](images/bug-defect/Screen-C4-IA-04-01a.jpg) [Xem ảnh](images/bug-defect/Screen-C4-IA-04-01b.jpg) |
 | IA-04-02 | Feedback | Toasts có màu sắc phân biệt rõ ràng: Xanh (Thành công), Đỏ (Lỗi), Vàng (Cảnh báo). | Nielsen #8: Aesthetic | N/A | |
 | IA-04-03 | Feedback | Hộp thoại xác nhận (Confirmation dialog) xuất hiện trước các hành động hủy/xóa quan trọng. | Nielsen #5: Error Prev. | Pass | |
 | IA-04-04 | Feedback | Huy hiệu (Badges) hiển thị chính xác số lượng thông báo; trạng thái vé thay đổi tương ứng khi được phê duyệt/hủy. | Nielsen #1: Visibility | N/A | |
@@ -305,7 +305,7 @@
 | IA-04-07 | Feedback | Chấm đỏ thông báo (Notification dot) hiển thị động ngay khi có thay đổi trạng thái đăng ký. | Nielsen #1: Visibility | N/A | |
 | IA-04-08 | Feedback | Hộp thoại chi tiết ảnh (Lightbox) mở rộng mượt mà khi click vào ảnh đính kèm. | Nielsen #7: Flexibility | N/A | |
 | IA-04-09 | Feedback | Cập nhật dữ liệu thời gian thực (Real-time update) mà không cần người dùng reload trang. | Norman: Feedback | N/A | |
-| IA-04-10 | Feedback | Hiển thị thông báo rõ ràng khi mất kết nối mạng Internet. | Nielsen #1: Visibility | Fail | Lỗi ngoại tuyến: Khi mất mạng, nút Xác nhận trong hộp thoại xóa nhấn vào không đưa ra bất kỳ phản hồi hay cảnh báo lỗi nào (im lặng hoàn toàn). |
+| IA-04-10 | Feedback | Hiển thị thông báo rõ ràng khi mất kết nối mạng Internet. | Nielsen #1: Visibility | Fail | Lỗi ngoại tuyến: Khi mất mạng, nút Xác nhận trong hộp thoại xóa nhấn vào không đưa ra bất kỳ phản hồi hay cảnh báo lỗi nào (im lặng hoàn toàn). [Xem ảnh](images/bug-defect/Screen-C4-IA-04-10.jpg) |
 | IA-04-11 | Feedback | Hệ thống vô hiệu hóa nút gửi hoặc ngăn chặn gửi dữ liệu trùng lặp khi người dùng click đúp nút Submit. | Nielsen #5: Error Prev. | Pass | |
 | IA-04-12 | Feedback | Mã QR/Barcode trên vé hiển thị rõ nét (không bị mờ), có kích thước tối thiểu đảm bảo quét được bằng ứng dụng camera thông thường. | Nielsen #1: Visibility | N/A | |
 | IA-04-13 | Feedback | Ô nhập liệu (text box) hiển thị hiệu ứng viền/nổi bật trực quan (focus state) khi nhấp chuột vào để người dùng nhận biết rõ ràng đang thao tác/nhập liệu. | Norman: Feedback | N/A | |
@@ -518,14 +518,14 @@ Dưới đây là bảng ghi nhận điểm số trả lời (từ 1 đến 5) c
 
 | Vấn đề gặp phải (Friction points / Bugs) | Ảnh minh họa (Screenshot) | Mức độ nghiêm trọng (Severity 0-4) | Đề xuất giải pháp UI/UX |
 |---|---|---|---|
-| **Lỗi hỏng cấu trúc tệp Excel khi mở (Excel Error):** Người dùng xuất file Excel thành công nhưng khi mở lên Microsoft Excel báo lỗi cấu trúc tệp bắt Repair gây hoang mang (Cả 4 User đều gặp phải, nhưng chỉ có User 1 và User 3 là bối rối, cần sự trợ giúp). | ![Excel Error](../images/usability-error-hesitant/Excel.jpg) | 3 | Sửa đổi thư viện kết xuất Excel phía Backend để xuất đúng định dạng OpenXML chuẩn, tránh lỗi cấu trúc XML nội bộ. |
-| **Tìm kiếm (Search) lỗi phân trang và chữ viết thường:** Khi gõ tìm kiếm viết thường ("hoàng", "kỳ"), kết quả hiển thị lại xuất hiện những User không liên quan và còn bị lỗi pagination nhảy sai lệch, người dùng buộc phải click pagination dưới chân trang mới hiển thị đúng kết quả (User 2 gặp phải). | ![Search User](../images/usability-error-hesitant/Search_User.jpg) | 3 | Khắc phục lỗi đồng bộ dữ liệu pagination khi kích hoạt chức năng tìm kiếm; đảm bảo tìm kiếm không phân biệt chữ hoa/chữ thường. |
-| **Tìm kiếm không hỗ trợ lọc họ tên đầy đủ (Full Name):** Khi người dùng vừa tạo tài khoản (ví dụ "A Nguyen" ở User 1) và tìm kiếm lại bằng cụm từ này, hệ thống không trả về kết quả vì thanh tìm kiếm chỉ hỗ trợ đối sánh rời rạc "Họ" hoặc "Tên" (User 1). | ![Search After Create](../images/usability-error-hesitant/Search_After_Create.jpg) | 3 | Nâng cấp API tìm kiếm ở backend để hỗ trợ truy vấn linh hoạt toàn bộ chuỗi họ tên chứa khoảng trắng (Full Name). |
-| **Không thấy nút đổi trạng thái Active/Unactive:** Nút chuyển đổi Active/Unactive được thiết kế dạng Toggle Button nhưng độ tương phản kém và thiếu nhãn hướng dẫn, khiến người dùng không nhận diện được nút để thay đổi trạng thái user (User 4 phải nhờ trợ giúp). | ![Set Unactive](../images/usability-error-hesitant/Set_Unactive.jpg) | 2 | Tăng độ tương phản màu sắc của Toggle Button và bổ sung nhãn văn bản chỉ dẫn kế bên nút. |
-| **Khó khăn khi muốn xem thông tin chi tiết người dùng:** Người dùng muốn click vào dòng hoặc avatar của User để xem trang thông tin chi tiết (User Detail) nhưng hệ thống không hỗ trợ tính năng này, gây hiểu lầm về UX (User 2, User 3 gặp phải). | ![Detail User](../images/usability-error-hesitant/Detail_User.jpg) | 2 | Bổ sung nút "Xem chi tiết" (View Detail) ở cột Actions hoặc cho phép click vào hàng dữ liệu để hiển thị popup thông tin chi tiết. |
-| **Trải nghiệm Validation Form kém (Tuần tự & Thiếu hướng dẫn):** Form tạo mới không ghi rõ quy định mật khẩu/SĐT từ đầu. Khi bấm "Create User", hệ thống chỉ báo lỗi từng trường một (sửa xong lỗi này bấm tiếp mới báo lỗi khác) khiến người dùng phải nhấn nút nhiều lần. | ![Create User](../images/usability-error-hesitant/Create_User.jpg) | 2 | Hiển thị trực quan quy định định dạng kế bên nhãn. Thực hiện validate toàn bộ biểu mẫu và hiển thị thông báo lỗi đồng loạt cho tất cả các trường không hợp lệ trong một lần nhấn nút. |
-| **Con trỏ chuột không đổi kiểu khi di chuột lên nút:** Khi người dùng trỏ chuột tới nút "Create User", con trỏ chuột không thay đổi thành hình bàn tay (pointer cursor) khiến họ phân vân không rõ nút có thể bấm được hay không. | ![Press Create User](../images/usability-error-hesitant/Press_Create_User.jpg) | 1 | Thêm thuộc tính CSS `cursor: pointer` cho toàn bộ các nút bấm (button) trên hệ thống để tăng phản hồi tương tác (feedback). |
-| **Bộ lọc thông tin (Filter) kém nổi bật:** Khu vực bộ lọc Role/Status có kích thước nhỏ, biểu tượng không trực quan khiến người dùng mất thời gian tìm kiếm nút lọc (User 3 mất hơn 15s loay hoay). | ![Filter User](../images/usability-error-hesitant/Filter_User.jpg) | 2 | Làm nổi bật khu vực bộ lọc trên giao diện và thêm nút "Hủy bộ lọc" (Clear Filter) nhanh bên cạnh. |
+| **Lỗi hỏng cấu trúc tệp Excel khi mở (Excel Error):** Người dùng xuất file Excel thành công nhưng khi mở lên Microsoft Excel báo lỗi cấu trúc tệp bắt Repair gây hoang mang (Cả 4 User đều gặp phải, nhưng chỉ có User 1 và User 3 là bối rối, cần sự trợ giúp). | [Xem ảnh](../images/usability-error-hesitant/Excel.jpg) | 3 | Sửa đổi thư viện kết xuất Excel phía Backend để xuất đúng định dạng OpenXML chuẩn, tránh lỗi cấu trúc XML nội bộ. |
+| **Tìm kiếm (Search) lỗi phân trang và chữ viết thường:** Khi gõ tìm kiếm viết thường ("hoàng", "kỳ"), kết quả hiển thị lại xuất hiện những User không liên quan và còn bị lỗi pagination nhảy sai lệch, người dùng buộc phải click pagination dưới chân trang mới hiển thị đúng kết quả (User 2 gặp phải). | [Xem ảnh](../images/usability-error-hesitant/Search_User.jpg) | 3 | Khắc phục lỗi đồng bộ dữ liệu pagination khi kích hoạt chức năng tìm kiếm; đảm bảo tìm kiếm không phân biệt chữ hoa/chữ thường. |
+| **Tìm kiếm không hỗ trợ lọc họ tên đầy đủ (Full Name):** Khi người dùng vừa tạo tài khoản (ví dụ "A Nguyen" ở User 1) và tìm kiếm lại bằng cụm từ này, hệ thống không trả về kết quả vì thanh tìm kiếm chỉ hỗ trợ đối sánh rời rạc "Họ" hoặc "Tên" (User 1). | [Xem ảnh](../images/usability-error-hesitant/Search_After_Create.jpg) | 3 | Nâng cấp API tìm kiếm ở backend để hỗ trợ truy vấn linh hoạt toàn bộ chuỗi họ tên chứa khoảng trắng (Full Name). |
+| **Không thấy nút đổi trạng thái Active/Unactive:** Nút chuyển đổi Active/Unactive được thiết kế dạng Toggle Button nhưng độ tương phản kém và thiếu nhãn hướng dẫn, khiến người dùng không nhận diện được nút để thay đổi trạng thái user (User 4 phải nhờ trợ giúp). | [Xem ảnh](../images/usability-error-hesitant/Set_Unactive.jpg) | 2 | Tăng độ tương phản màu sắc của Toggle Button và bổ sung nhãn văn bản chỉ dẫn kế bên nút. |
+| **Khó khăn khi muốn xem thông tin chi tiết người dùng:** Người dùng muốn click vào dòng hoặc avatar của User để xem trang thông tin chi tiết (User Detail) nhưng hệ thống không hỗ trợ tính năng này, gây hiểu lầm về UX (User 2, User 3 gặp phải). | [Xem ảnh](../images/usability-error-hesitant/Detail_User.jpg) | 2 | Bổ sung nút "Xem chi tiết" (View Detail) ở cột Actions hoặc cho phép click vào hàng dữ liệu để hiển thị popup thông tin chi tiết. |
+| **Trải nghiệm Validation Form kém (Tuần tự & Thiếu hướng dẫn):** Form tạo mới không ghi rõ quy định mật khẩu/SĐT từ đầu. Khi bấm "Create User", hệ thống chỉ báo lỗi từng trường một (sửa xong lỗi này bấm tiếp mới báo lỗi khác) khiến người dùng phải nhấn nút nhiều lần. | [Xem ảnh](../images/usability-error-hesitant/Create_User.jpg) | 2 | Hiển thị trực quan quy định định dạng kế bên nhãn. Thực hiện validate toàn bộ biểu mẫu và hiển thị thông báo lỗi đồng loạt cho tất cả các trường không hợp lệ trong một lần nhấn nút. |
+| **Con trỏ chuột không đổi kiểu khi di chuột lên nút:** Khi người dùng trỏ chuột tới nút "Create User", con trỏ chuột không thay đổi thành hình bàn tay (pointer cursor) khiến họ phân vân không rõ nút có thể bấm được hay không. | [Xem ảnh](../images/usability-error-hesitant/Press_Create_User.jpg) | 1 | Thêm thuộc tính CSS `cursor: pointer` cho toàn bộ các nút bấm (button) trên hệ thống để tăng phản hồi tương tác (feedback). |
+| **Bộ lọc thông tin (Filter) kém nổi bật:** Khu vực bộ lọc Role/Status có kích thước nhỏ, biểu tượng không trực quan khiến người dùng mất thời gian tìm kiếm nút lọc (User 3 mất hơn 15s loay hoay). | [Xem ảnh](../images/usability-error-hesitant/Filter_User.jpg) | 2 | Làm nổi bật khu vực bộ lọc trên giao diện và thêm nút "Hủy bộ lọc" (Clear Filter) nhanh bên cạnh. |
 
 *(Chú thích mức độ nghiêm trọng: 1 = Thẩm mỹ, 2 = Nhẹ, 3 = Nặng, 4 = Blocker).*
 
@@ -563,13 +563,13 @@ Dưới đây là bảng ghi nhận điểm số trả lời (từ 1 đến 5) c
 
 | Run ID | Thiết bị (Device) | Hệ điều hành (OS) | Trình duyệt (Browser) | Kết quả (Pass/Fail) & Ghi chú lỗi | Screenshot Link |
 |---|---|---|---|---|---|
-| C1-Run-01 | Desktop | Windows 11 | Chrome | Pass | ![User Management 1](images/cross-testing/C1-Desktop-Windows-Chrome.jpg) |
-| C1-Run-02 | Desktop | Windows 11 | Opera | Pass | ![User Management 2](images/cross-testing/C1-Desktop-Windows-Opera.jpg) |
-| C1-Run-03 | Desktop | Windows 11 | Edge | Pass | ![User Management 3](images/cross-testing/C1-Desktop-Windows-Edge.jpg) |
-| C1-Run-04 | Desktop | Windows 11 | Firefox | Pass | ![User Management 4](images/cross-testing/C1-Desktop-Windows-Firefox.jpg) |
-| C1-Run-05 | Desktop | macOS 14 | Safari | Pass | ![User Management 5](images/cross-testing/C1-Desktop-macOS-Safari.jpg) |
-| C1-Run-06 | Tablet | Android 15 | Chrome | Pass | ![User Management 6](images/cross-testing/C1-Tablet-Android-Chrome.jpg) |
-| C1-Run-07 | Phone | Android 16 | Chrome | Fail (Bảng thông tin của các User mất hết toàn bộ các cột, chỉ còn đúng cột Actions (Hành động) để chỉnh sửa/xóa User) | ![User Management 7](images/cross-testing/C1-Phone-Android-Chrome.jpg) |
+| C1-Run-01 | Desktop | Windows 11 | Chrome | Pass | [Xem ảnh](images/cross-testing/C1-Desktop-Windows-Chrome.jpg) |
+| C1-Run-02 | Desktop | Windows 11 | Opera | Pass | [Xem ảnh](images/cross-testing/C1-Desktop-Windows-Opera.jpg) |
+| C1-Run-03 | Desktop | Windows 11 | Edge | Pass | [Xem ảnh](images/cross-testing/C1-Desktop-Windows-Edge.jpg) |
+| C1-Run-04 | Desktop | Windows 11 | Firefox | Pass | [Xem ảnh](images/cross-testing/C1-Desktop-Windows-Firefox.jpg) |
+| C1-Run-05 | Desktop | macOS 14 | Safari | Pass | [Xem ảnh](images/cross-testing/C1-Desktop-macOS-Safari.jpg) |
+| C1-Run-06 | Tablet | Android 15 | Chrome | Pass | [Xem ảnh](images/cross-testing/C1-Tablet-Android-Chrome.jpg) |
+| C1-Run-07 | Phone | Android 16 | Chrome | Fail (Bảng thông tin của các User mất hết toàn bộ các cột, chỉ còn đúng cột Actions (Hành động) để chỉnh sửa/xóa User) | [Xem ảnh](images/cross-testing/C1-Phone-Android-Chrome.jpg) |
 
 <br>
 
@@ -577,13 +577,13 @@ Dưới đây là bảng ghi nhận điểm số trả lời (từ 1 đến 5) c
 
 | Run ID | Thiết bị (Device) | Hệ điều hành (OS) | Trình duyệt (Browser) | Kết quả (Pass/Fail) & Ghi chú lỗi | Screenshot Link |
 |---|---|---|---|---|---|
-| C2-Run-01 | Desktop | Windows 11 | Chrome | Pass | ![Create User 1](images/cross-testing/C2-Desktop-Windows-Chrome.jpg) |
-| C2-Run-02 | Desktop | Windows 11 | Opera | Pass | ![Create User 2](images/cross-testing/C2-Desktop-Windows-Opera.jpg) |
-| C2-Run-03 | Desktop | Windows 11 | Edge | Pass | ![Create User 3](images/cross-testing/C2-Desktop-Windows-Edge.jpg) |
-| C2-Run-04 | Desktop | Windows 11 | Firefox | Pass | ![Create User 4](images/cross-testing/C2-Desktop-Windows-Firefox.jpg) |
-| C2-Run-05 | Desktop | macOS 14 | Safari | Pass | ![Create User 5](images/cross-testing/C2-Desktop-macOS-Safari.jpg) |
-| C2-Run-06 | Tablet | Android 15 | Chrome | Pass | ![Create User 6](images/cross-testing/C2-Tablet-Android-Chrome.jpg) |
-| C2-Run-07 | Phone | Android 16 | Chrome | Fail (Dialog tạo User mới rất nhỏ, khó có thể thao tác/chọn trên điện thoại được và cũng không thể xác định được User đã tạo mới hay chưa do không thấy nội dung bảng) | ![Create User 7](images/cross-testing/C2-Phone-Android-Chrome.jpg) |
+| C2-Run-01 | Desktop | Windows 11 | Chrome | Pass | [Xem ảnh](images/cross-testing/C2-Desktop-Windows-Chrome.jpg) |
+| C2-Run-02 | Desktop | Windows 11 | Opera | Pass | [Xem ảnh](images/cross-testing/C2-Desktop-Windows-Opera.jpg) |
+| C2-Run-03 | Desktop | Windows 11 | Edge | Pass | [Xem ảnh](images/cross-testing/C2-Desktop-Windows-Edge.jpg) |
+| C2-Run-04 | Desktop | Windows 11 | Firefox | Pass | [Xem ảnh](images/cross-testing/C2-Desktop-Windows-Firefox.jpg) |
+| C2-Run-05 | Desktop | macOS 14 | Safari | Pass | [Xem ảnh](images/cross-testing/C2-Desktop-macOS-Safari.jpg) |
+| C2-Run-06 | Tablet | Android 15 | Chrome | Pass | [Xem ảnh](images/cross-testing/C2-Tablet-Android-Chrome.jpg) |
+| C2-Run-07 | Phone | Android 16 | Chrome | Fail (Dialog tạo User mới rất nhỏ, khó có thể thao tác/chọn trên điện thoại được và cũng không thể xác định được User đã tạo mới hay chưa do không thấy nội dung bảng) | [Xem ảnh](images/cross-testing/C2-Phone-Android-Chrome.jpg) |
 
 <br>
 
@@ -591,13 +591,13 @@ Dưới đây là bảng ghi nhận điểm số trả lời (từ 1 đến 5) c
 
 | Run ID | Thiết bị (Device) | Hệ điều hành (OS) | Trình duyệt (Browser) | Kết quả (Pass/Fail) & Ghi chú lỗi | Screenshot Link |
 |---|---|---|---|---|---|
-| C3-Run-01 | Desktop | Windows 11 | Chrome | Fail (Thao tác xuất thành công nhưng tệp mở ra bị cảnh báo lỗi cấu trúc BUG-C3-01) | ![Export Excel 1](images/cross-testing/C3-Desktop-Windows-Chrome-1.jpg) <br> ![Excel Data 1](images/cross-testing/C3-Desktop-Windows-Chrome-2.jpg) |
-| C3-Run-02 | Desktop | Windows 11 | Opera | Fail (Thao tác xuất thành công nhưng tệp mở ra bị cảnh báo lỗi cấu trúc như C3-Run-01) | ![Export Excel 2](images/cross-testing/C3-Desktop-Windows-Opera-1.jpg) <br> ![Excel Data 2](images/cross-testing/C3-Desktop-Windows-Opera-2.jpg) |
-| C3-Run-03 | Desktop | Windows 11 | Edge | Fail (Thao tác xuất thành công nhưng tệp mở ra bị cảnh báo lỗi cấu trúc như C3-Run-01) | ![Export Excel 3](images/cross-testing/C3-Desktop-Windows-Edge-1.jpg) <br> ![Excel Data 3](images/cross-testing/C3-Desktop-Windows-Edge-2.jpg) |
-| C3-Run-04 | Desktop | Windows 11 | Firefox | Fail (Thao tác xuất thành công nhưng tệp mở ra bị cảnh báo lỗi cấu trúc như C3-Run-01) | ![Export Excel 4](images/cross-testing/C3-Desktop-Windows-Firefox-1.jpg) <br> ![Excel Data 4](images/cross-testing/C3-Desktop-Windows-Firefox-2.jpg) |
-| C3-Run-05 | Desktop | macOS 14 | Safari | Pass | ![Export Excel 5](images/cross-testing/C3-Desktop-macOS-Safari-1.jpg) <br> ![Excel Data 5-a](images/cross-testing/C3-Desktop-macOS-Safari-2.jpg) <br> ![Excel Data 5-b](images/cross-testing/C3-Desktop-macOS-Safari-3.jpg) |
-| C3-Run-06 | Tablet | Android 15 | Chrome | Pass | ![Export Excel 6](images/cross-testing/C3-Tablet-Android-Chrome-1.jpg) <br> ![Excel Data 6](images/cross-testing/C3-Tablet-Android-Chrome-2.jpg) |
-| C3-Run-07 | Phone | Android 16 | Chrome | Pass | ![Export Excel 7](images/cross-testing/C3-Phone-Android-Chrome-1.jpg) <br> ![Excel Data 7](images/cross-testing/C3-Phone-Android-Chrome-2.jpg) |
+| C3-Run-01 | Desktop | Windows 11 | Chrome | Fail (Thao tác xuất thành công nhưng tệp mở ra bị cảnh báo lỗi cấu trúc BUG-C3-01) | [Xem ảnh](images/cross-testing/C3-Desktop-Windows-Chrome-1.jpg) <br> [Xem ảnh](images/cross-testing/C3-Desktop-Windows-Chrome-2.jpg) |
+| C3-Run-02 | Desktop | Windows 11 | Opera | Fail (Thao tác xuất thành công nhưng tệp mở ra bị cảnh báo lỗi cấu trúc như C3-Run-01) | [Xem ảnh](images/cross-testing/C3-Desktop-Windows-Opera-1.jpg) <br> [Xem ảnh](images/cross-testing/C3-Desktop-Windows-Opera-2.jpg) |
+| C3-Run-03 | Desktop | Windows 11 | Edge | Fail (Thao tác xuất thành công nhưng tệp mở ra bị cảnh báo lỗi cấu trúc như C3-Run-01) | [Xem ảnh](images/cross-testing/C3-Desktop-Windows-Edge-1.jpg) <br> [Xem ảnh](images/cross-testing/C3-Desktop-Windows-Edge-2.jpg) |
+| C3-Run-04 | Desktop | Windows 11 | Firefox | Fail (Thao tác xuất thành công nhưng tệp mở ra bị cảnh báo lỗi cấu trúc như C3-Run-01) | [Xem ảnh](images/cross-testing/C3-Desktop-Windows-Firefox-1.jpg) <br> [Xem ảnh](images/cross-testing/C3-Desktop-Windows-Firefox-2.jpg) |
+| C3-Run-05 | Desktop | macOS 14 | Safari | Pass | [Xem ảnh](images/cross-testing/C3-Desktop-macOS-Safari-1.jpg) <br> [Xem ảnh](images/cross-testing/C3-Desktop-macOS-Safari-2.jpg) <br> [Xem ảnh](images/cross-testing/C3-Desktop-macOS-Safari-3.jpg) |
+| C3-Run-06 | Tablet | Android 15 | Chrome | Pass | [Xem ảnh](images/cross-testing/C3-Tablet-Android-Chrome-1.jpg) <br> [Xem ảnh](images/cross-testing/C3-Tablet-Android-Chrome-2.jpg) |
+| C3-Run-07 | Phone | Android 16 | Chrome | Pass | [Xem ảnh](images/cross-testing/C3-Phone-Android-Chrome-1.jpg) <br> [Xem ảnh](images/cross-testing/C3-Phone-Android-Chrome-2.jpg) |
 
 <br>
 
@@ -605,10 +605,10 @@ Dưới đây là bảng ghi nhận điểm số trả lời (từ 1 đến 5) c
 
 | Run ID | Thiết bị (Device) | Hệ điều hành (OS) | Trình duyệt (Browser) | Kết quả (Pass/Fail) & Ghi chú lỗi | Screenshot Link |
 |---|---|---|---|---|---|
-| C4-Run-01 | Desktop | Windows 11 | Chrome | Pass | ![Delete User Dialog 1](images/cross-testing/C4-Desktop-Windows-Chrome.jpg) |
-| C4-Run-02 | Desktop | Windows 11 | Opera | Pass | ![Delete User Dialog 2](images/cross-testing/C4-Desktop-Windows-Opera.jpg) |
-| C4-Run-03 | Desktop | Windows 11 | Edge | Pass | ![Delete User Dialog 3](images/cross-testing/C4-Desktop-Windows-Edge.jpg) |
-| C4-Run-04 | Desktop | Windows 11 | Firefox | Pass | ![Delete User Dialog 4](images/cross-testing/C4-Desktop-Windows-Firefox.jpg) |
-| C4-Run-05 | Desktop | macOS 14 | Safari | Pass | ![Delete User Dialog 5](images/cross-testing/C4-Desktop-macOS-Safari.jpg) |
-| C4-Run-06 | Tablet | Android 15 | Chrome | Pass | ![Delete User Dialog 6](images/cross-testing/C4-Tablet-Android-Chrome.jpg) |
-| C4-Run-07 | Phone | Android 16 | Chrome | Fail (Dialog xóa User rất nhỏ và để xem hết toàn bộ dialog thì phải kéo nhỏ hết mức hay kéo màn hình sang vị trí dialog, đồng thời không thể thấy Audit Logs created hay updated do bảng mất hầu như toàn bộ các cột) | ![Delete User Dialog 7](images/cross-testing/C4-Phone-Android-Chrome.jpg) |
+| C4-Run-01 | Desktop | Windows 11 | Chrome | Pass | [Xem ảnh](images/cross-testing/C4-Desktop-Windows-Chrome.jpg) |
+| C4-Run-02 | Desktop | Windows 11 | Opera | Pass | [Xem ảnh](images/cross-testing/C4-Desktop-Windows-Opera.jpg) |
+| C4-Run-03 | Desktop | Windows 11 | Edge | Pass | [Xem ảnh](images/cross-testing/C4-Desktop-Windows-Edge.jpg) |
+| C4-Run-04 | Desktop | Windows 11 | Firefox | Pass | [Xem ảnh](images/cross-testing/C4-Desktop-Windows-Firefox.jpg) |
+| C4-Run-05 | Desktop | macOS 14 | Safari | Pass | [Xem ảnh](images/cross-testing/C4-Desktop-macOS-Safari.jpg) |
+| C4-Run-06 | Tablet | Android 15 | Chrome | Pass | [Xem ảnh](images/cross-testing/C4-Tablet-Android-Chrome.jpg) |
+| C4-Run-07 | Phone | Android 16 | Chrome | Fail (Dialog xóa User rất nhỏ và để xem hết toàn bộ dialog thì phải kéo nhỏ hết mức hay kéo màn hình sang vị trí dialog, đồng thời không thể thấy Audit Logs created hay updated do bảng mất hầu như toàn bộ các cột) | [Xem ảnh](images/cross-testing/C4-Phone-Android-Chrome.jpg) |
