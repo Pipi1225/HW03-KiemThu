@@ -14,7 +14,8 @@
 | **2** | Task 2 — User testing with 5 real users (scenario + 5 sessions + analysis → Usability Report) | 25 | **20** |  
 | **3** | Task 3 — Cross-Browser / Cross-Platform matrix (3 OS × 5 browsers × 3 device classes) | 25 | **25** |
 | **4** | Bug & Usability Findings submission (Google Form) + aggregated log | 10 | **10** |
-| **5** | Agent Skills | 100 | **95** |
+| **5** | Agent Skills | 10 | **10** |
+| **Total** |  | 100 | **95** |
 
 ---
 
@@ -90,4 +91,4 @@ Ma trận kiểm thử đa cấu hình đã phủ được **28 lượt chạy**
 
 ### 2.7 Video Demo Agent Skill
 - **Đường dẫn tới Video Demo Agent Skill:** [Link Youtube Agent Skill](https://youtu.be/ngua00G-mg8)
-- **Đường dẫn tới Video Demo /broswer của Antigravity:** [Link Youtube Demo Browser Antigravity](https://youtu.be/phtz8jDlCw4)
+- **Đường dẫn tới Video Demo /browser của Antigravity:** [Link Youtube Demo Browser Antigravity](https://youtu.be/phtz8jDlCw4)

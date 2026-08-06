@@ -26,7 +26,7 @@ Và 2 trạng thái bao gồm:
 
 ---
 
-## 2. Bảng Câu Hỏi SUS (SUS Questionare)
+## 2. Bảng Câu Hỏi SUS (SUS Questionnaire)
 
 *Thang điểm đánh giá: 1 (Hoàn toàn không đồng ý) đến 5 (Hoàn toàn đồng ý)*
 
